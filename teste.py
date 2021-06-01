@@ -458,4 +458,3 @@ dias_i = tempo_total /  (horas_ * 24)
 
 print(f"{dias_:.2f} dias {horas_:.2f} horas ou {min_:.2f} Minutos e {sec_:.2f} Segundos")
 
-xxxx
