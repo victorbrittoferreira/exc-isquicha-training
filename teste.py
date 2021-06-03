@@ -546,9 +546,9 @@
 #num2 = float ( input ('Digite o segundo numero: '))
 #num3 = float ( input ('Digite o segundo numero: '))
 #
-#if num1 > num2 and num3:
+#if num1 > num2 and num1 > num3:
 #    print ('O primeiro número é o maior')
-#elif num2 > num3:
+#elif num2 > num1 and num2 > num3:
 #    print ('O segundo número é o maior')
 #else:
 #    print ('O terceiro número é o maior')
@@ -556,20 +556,36 @@
 
 ##25 Faça um Programa que leia três números e mostre o maior e o menor deles.
 
-num1 = float ( input ('Digite o primeiro numero: '))
-num2 = float ( input ('Digite o segundo numero: '))
-num3 = float ( input ('Digite o segundo numero: '))
+#num1 = float ( input ('Digite o primeiro numero: '))
+#num2 = float ( input ('Digite o segundo numero: '))
+#num3 = float ( input ('Digite o segundo numero: '))
+#
+#if num1 > num2 and num1 > num3:
+#    print (f'{num1} primeiro número é o maior')
+#elif num2 > num1 and num2 > num3:
+#    print (f'{num2} segundo número é o maior')
+#else:
+#    print (f'{num3} terceiro número é o maior')
+#
+#if num1 < num2 and num1 < num3:
+#    print (f'{num1} primeiro número é o menor')
+#elif num2 < num1 and num2 < num3:
+#    print (f'{num2} segundo número é o menor')
+#else:
+#    print (f'{num3} terceiro número é o menor')
 
-if num1 > num2 and num3:
-    print (f'{num1} primeiro número é o maior')
-elif num2 > num3:
-    print (f'{num2} segundo número é o maior')
-else:
-    print (f'{num3} terceiro número é o maior')
 
-if num1 < num2 and num3:
-    print (f'{num1} primeiro número é o menor')
-elif num2 > num3:
-    print (f'{num2} segundo número é o menor')
-else:
-    print (f'{num3} terceiro número é o menor')
+##26 Faça um programa que pergunte o preço de três produtos e informe qual produto
+#você deve comprar, sabendo que a decisão é sempre pelo mais barato.
+
+#num1 = float ( input ('Digite o preço do primeiro produto: '))
+#num2 = float ( input ('Digite o preço do segundo produto: '))
+#num3 = float ( input ('Digite o preço do segundo produto: '))
+#
+#if num1 < num2 and num1 < num3:
+#    print (f'O preço do primeiro é o menor, custando R$ {num1:.2f}')
+#elif num2 < num1 and num2 < num3:
+#    print (f'O preço do segundo é o menor, custando R$ {num2:.2f}')
+#else:
+#    print (f'O preço do terceiro é o menor, custando R$ {num3:.2f}')
+    
