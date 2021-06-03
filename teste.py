@@ -463,3 +463,35 @@
 
 
 ############## Estruturas de decisão ##############
+
+
+##19 Faça um Programa que peça dois números e imprima o 
+#maior deles.
+
+#fst_numb = int (input('Digite um número inteiro: '))
+#sec_numb = int (input('Digite outro número inteiro: '))
+#
+#if fst_numb > sec_numb:
+#    print(f'{fst_numb} é maior que o segundo')
+#else:
+#    print(f'{sec_numb} é maior que o primeiro')
+
+    
+##20 Faça um Programa que peça um valor e mostre na tela se o valor é
+#positivo ou negativo.
+
+#num = float (input('Digite um número inteiro: '))
+#
+#if num == 0:
+#    print(f'{num} é neutro')
+#
+#elif num > 0:
+#    print(f'{num} é postivo')
+#
+#elif num < 0:
+#    print(f'{num} é negativo')
+
+
+## 21 Faça um Programa que verifique se uma letra digitada é "F" ou "M".
+#Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inválido.
+
