@@ -553,4 +553,23 @@
 #else:
 #    print ('O terceiro número é o maior')
         
-    
+
+##25 Faça um Programa que leia três números e mostre o maior e o menor deles.
+
+num1 = float ( input ('Digite o primeiro numero: '))
+num2 = float ( input ('Digite o segundo numero: '))
+num3 = float ( input ('Digite o segundo numero: '))
+
+if num1 > num2 and num3:
+    print (f'{num1} primeiro número é o maior')
+elif num2 > num3:
+    print (f'{num2} segundo número é o maior')
+else:
+    print (f'{num3} terceiro número é o maior')
+
+if num1 < num2 and num3:
+    print (f'{num1} primeiro número é o menor')
+elif num2 > num3:
+    print (f'{num2} segundo número é o menor')
+else:
+    print (f'{num3} terceiro número é o menor')
