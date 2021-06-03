@@ -528,6 +528,14 @@
 #    A mensagem "Reprovado", se a média for menor do que sete;
 #    A mensagem "Aprovado com Distinção", se a média for igual a dez.
 
-
-
-
+#average_grade1 = float ( input ('Digite a primeira media do aluno: '))
+#average_grade2 = float ( input ('Digite a segunda media do aluno: '))
+#
+#final_average_grade = (average_grade1 + average_grade2) /2 
+#
+#if final_average_grade == 10:
+#    print ('Student Approved with distinction')
+#elif final_average_grade >= 7:
+#    print ('Student Approved')
+#else:
+#    print ('Student Repproved')
