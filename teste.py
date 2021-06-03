@@ -539,3 +539,18 @@
 #    print ('Student Approved')
 #else:
 #    print ('Student Repproved')
+
+##24 Faça um Programa que leia três números e mostre o maior deles
+
+#num1 = float ( input ('Digite o primeiro numero: '))
+#num2 = float ( input ('Digite o segundo numero: '))
+#num3 = float ( input ('Digite o segundo numero: '))
+#
+#if num1 > num2 and num3:
+#    print ('O primeiro número é o maior')
+#elif num2 > num3:
+#    print ('O segundo número é o maior')
+#else:
+#    print ('O terceiro número é o maior')
+        
+    
