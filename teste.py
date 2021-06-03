@@ -1,3 +1,5 @@
+############## Sequential Structures ##############
+
 ##3 Faça um Programa que peça dois números e imprima a soma.
 
 ##num1 = int (input("Digite um numero: "))
@@ -429,32 +431,35 @@
 #velocidade de um link de Internet (em Mbps(bits - Megabits, not Megabibites)), calcule e informe o tempo
 #aproximado de download do arquivo usando este link (em minutos).
 
-import math
-
-tamanhoArquivo = float (input('Digite o tamanho do arquivo em MB(s): '))
-larguraBanda = float (input('Digite a banda do link Mbps(s): '))
-
-tempo_total = (tamanhoArquivo * 8) /  larguraBanda
+#import math
+#
+#tamanhoArquivo = float (input('Digite o tamanho do arquivo em MB(s): '))
+#larguraBanda = float (input('Digite a banda do link Mbps(s): '))
+#
+#tempo_total = (tamanhoArquivo * 8) /  larguraBanda
 #sec = 60
 #min = tempo_total / sec
 
 #print (tempo_total)  
 #print( min)
-tempos = (tamanhoArquivo * 8) / larguraBanda
+#tempos = (tamanhoArquivo * 8) / larguraBanda
+#
+#sec_ = 1  
+#min_ = 60
+#hora_ = 3600
+#dia_ = 86400
+#
+#min_i = tempo_total / (min_)
+#
+##min_f = min_i //  
+#
+#horas_i = tempo_total / (hora_)
+#
+#
+#dias_i = tempo_total /  (dia_)
+#
+#
+#print(f"{dias_i:.3f} dias {horas_i:.2f} horas ou {min_i:.2f} Minutos e {tempos:.2f} Segundos")
 
-sec_ = 1  
 
-
-min_i = tempo_total / (sec_ * 60)
-min_f = min_i // 
-
-horas_i = tempo_total / (min_ * 60)
-
-
-dias_i = tempo_total /  (horas_ * 24)
-
-
-
-
-print(f"{dias_:.2f} dias {horas_:.2f} horas ou {min_:.2f} Minutos e {sec_:.2f} Segundos")
-
+############## Estruturas de decisão ##############
