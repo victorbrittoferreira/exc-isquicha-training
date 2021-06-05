@@ -2,8 +2,8 @@
 
 ##3 Faça um Programa que peça dois números e imprima a soma.
 
-##num1 = int (input("Digite um numero: "))
-##num2 = int (input("Digite outro numero: "))
+##num1 = int (input("Digite um num: "))
+##num2 = int (input("Digite outro num: "))
 ##sum = num1 + num2
 ##
 ##print(f"A soma entre {num1} e {num2} é {sum}")
@@ -135,13 +135,13 @@
 
 
 #st_numb = int (input("Digite um número inteiro: ")) 
-# o primeiro numero deverá ser inteiro, isto é: (...-1, 0, 1, ...)
+# o primeiro num deverá ser inteiro, isto é: (...-1, 0, 1, ...)
 
 #nd_numb = int (input("Digite outro número inteiro: ")) 
-# o segundo numero deverá ser inteiro (...-1, 0, 1, ...)
+# o segundo num deverá ser inteiro (...-1, 0, 1, ...)
 
 #rd_numb = int (input("Digite um número real: ")) 
-# o terceiro numero deverá ser natural (0, 1, ...)
+# o terceiro num deverá ser natural (0, 1, ...)
 
 #if rd_numb % 1 == 0 and rd_numb >= 0:
 #    print ('ok')
@@ -149,9 +149,9 @@
 #   print('nope')
 
 
-#num1 = int(input("Digite um numero inteiro: "))
-#num2 = int(input("Digite outro numero inteiro: "))
-#num3 = float(input("Digite um numero real: "))
+#num1 = int(input("Digite um num inteiro: "))
+#num2 = int(input("Digite outro num inteiro: "))
+#num3 = float(input("Digite um num real: "))
 #a = (num1 * 2) * (num2 / 2)
 #b = (num1 * 3) + num3
 #c = num3 ** 3
@@ -542,9 +542,9 @@
 
 ##24 Faça um Programa que leia três números e mostre o maior deles
 
-#num1 = float ( input ('Digite o primeiro numero: '))
-#num2 = float ( input ('Digite o segundo numero: '))
-#num3 = float ( input ('Digite o segundo numero: '))
+#num1 = float ( input ('Digite o primeiro num: '))
+#num2 = float ( input ('Digite o segundo num: '))
+#num3 = float ( input ('Digite o segundo num: '))
 #
 #if num1 > num2 and num1 > num3:
 #    print ('O primeiro número é o maior')
@@ -556,9 +556,9 @@
 
 ##25 Faça um Programa que leia três números e mostre o maior e o menor deles.
 
-#num1 = float ( input ('Digite o primeiro numero: '))
-#num2 = float ( input ('Digite o segundo numero: '))
-#num3 = float ( input ('Digite o segundo numero: '))
+#num1 = float ( input ('Digite o primeiro num: '))
+#num2 = float ( input ('Digite o segundo num: '))
+#num3 = float ( input ('Digite o segundo num: '))
 #
 #if num1 > num2 and num1 > num3:
 #    print (f'{num1} primeiro número é o maior')
@@ -588,4 +588,34 @@
 #    print (f'O preço do segundo é o menor, custando R$ {num2:.2f}')
 #else:
 #    print (f'O preço do terceiro é o menor, custando R$ {num3:.2f}')
+    
+
+##27 Faça um Programa que leia três números e mostre-os em ordem decrescente.
+
+num1 =  ( input ('Digite o primeiro primeiro: '))
+num2 =  ( input ('Digite o segundo segundo: '))
+num3 =  ( input ('Digite o segundo terceiro: '))
+
+num_list = [num1, num2, num3]
+
+#if num1 > num2 > num3:
+#    print(num1, num2, num3)
+#elif num1 > num3 > num2:
+#    print(num1, num3, num2)
+#elif num2 > num1 > num3:
+#    print(num2, num1, num3)
+#elif num2 > num3 > num1:
+#    print(num2, num3, num1)
+#elif num3 > num1 > num2:
+#    print(num3, num1, num2)
+#else:
+#    print(num3, num2, num1)
+
+### OR 
+
+num_ordered = sorted(num_list, reverse = True )
+for num in num_ordered:
+    print(len( num))
+    
+    
     
