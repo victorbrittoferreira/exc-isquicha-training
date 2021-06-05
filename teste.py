@@ -495,12 +495,14 @@
 ## 21 Faça um Programa que verifique se uma letra digitada é "F" ou "M".
 #Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inválido.
 
-#sex =  (input('Digite seu genêro B I O L Ó G I C O: '))
+#sex =  input(
+#    'Digite seu genêro B I O L Ó G I C O: '
+# ).upper()
 #
-#if sex == 'm' or sex == 'M':
+#if sex == 'm':
 #    print(f'{sex} é masculino')
 #
-#elif sex == 'f' or sex == 'F':
+#elif sex == 'f':
 #    print(f'{sex} é feminino')
 #    
 #else:
@@ -589,33 +591,66 @@
 #else:
 #    print (f'O preço do terceiro é o menor, custando R$ {num3:.2f}')
     
-
+## R E F A Z E R 
 ##27 Faça um Programa que leia três números e mostre-os em ordem decrescente.
 
-num1 =  ( input ('Digite o primeiro primeiro: '))
-num2 =  ( input ('Digite o segundo segundo: '))
-num3 =  ( input ('Digite o segundo terceiro: '))
+#num1 =  ( input ('Digite o primeiro primeiro: '))
+#num2 =  ( input ('Digite o segundo segundo: '))
+#num3 =  ( input ('Digite o segundo terceiro: '))
+#
+#num_list = [num1, num2, num3]
+#
+##if num1 > num2 > num3:
+##    print(num1, num2, num3)
+##elif num1 > num3 > num2:
+##    print(num1, num3, num2)
+##elif num2 > num1 > num3:
+##    print(num2, num1, num3)
+##elif num2 > num3 > num1:
+##    print(num2, num3, num1)
+##elif num3 > num1 > num2:
+##    print(num3, num1, num2)
+##else:
+##    print(num3, num2, num1)
+#
+#### OR 
+#
+#num_ordered = sorted(num_list, reverse = True )
+#for num in num_ordered:
+#    print(len( num))
 
-num_list = [num1, num2, num3]
 
-#if num1 > num2 > num3:
-#    print(num1, num2, num3)
-#elif num1 > num3 > num2:
-#    print(num1, num3, num2)
-#elif num2 > num1 > num3:
-#    print(num2, num1, num3)
-#elif num2 > num3 > num1:
-#    print(num2, num3, num1)
-#elif num3 > num1 > num2:
-#    print(num3, num1, num2)
+## 28 Faça um Programa que pergunte em que turno você estuda.
+#Peça para digitar M-matutino ou V-Vespertino ou N- Noturno.
+#Imprima a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!" ou
+#"Valor Inválido!", conforme o caso.
+
+#ask_turn = input (
+#    'Digite o turno o qual estuda, isto é, M-matutino ou V-Vespertino ou N- Noturno: '
+#).upper()
+#
+#if ask_turn == 'M':
+#    print(f'Bom dia!')
+#
+#elif ask_turn == 'V':
+#    print(f'Boa tarde!')
+#    
+#elif ask_turn == 'N':
+#    print(f'Boa noite!')
+#    
 #else:
-#    print(num3, num2, num1)
+#    print(f'Período inválido')
 
-### OR 
+# a stupid way to do the same thing
+#if ask_turn == 'm' or ask_turn == 'M':
+#    print(f'Bom dia!')
+#
+#elif ask_turn == 'v' or ask_turn == 'V':
+#    print(f'Boa tarde!')
+#    
+#elif ask_turn == 'n' or ask_turn == 'N':
+#    print(f'Boa tarde!')
+#    
+#else:
+#    print(f'Período inválido')
 
-num_ordered = sorted(num_list, reverse = True )
-for num in num_ordered:
-    print(len( num))
-    
-    
-    
