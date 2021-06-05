@@ -671,33 +671,37 @@
 #        o valor do aumento;
 #        o novo salário, após o aumento.
 
-#currentRemuneration = int (input (
+#currentSalary = int (input (
 #    'Digite o quanto ganha atualmente: '
 #))
 
-x = 281
+x = 28
 
 a = 280
 b = 700
 c = 1500
 
-d = 1.2
-e = 1.15
-f = 1.1
-g = 1.05
+d = 20
+e = 15
+f = 10
+g = 5
 
 if x <= a:
-    x *= d
-       
+    salaryPromotion = x * (1 + (d/100))
+           
 elif x > a and x <= b:
-    x *= e
+    salaryPromotion = x * (1 + (e/100)) 
     
 elif x > b and x <= c:
-    x *= f
+    salaryPromotion = x * (1 + (f/100))
     
 elif x > c:
-    x *= g
+    salaryPromotion = x * (1 + (g/100))
     
 
-print('Seu salário antes do reajuste era {}')
+print(f'O seu salário: ')
+print(f' - antes do reajuste era R$ {x}')
+print(f' - o percentual aplicado {d}') 
+#print(f' - o valor do aumento {rest}')
+print(f' - depois do aumento R$ {salaryPromotion} ')
     
