@@ -671,37 +671,41 @@
 #        o valor do aumento;
 #        o novo salário, após o aumento.
 
-#currentSalary = int (input (
-#    'Digite o quanto ganha atualmente: '
-#))
-
-x = 28
+currSalry = float (input (
+    'Digite o quanto ganha atualmente R$ '
+))
 
 a = 280
 b = 700
 c = 1500
 
-d = 20
-e = 15
-f = 10
-g = 5
+twenty = 20
+fiften = 15
+ten = 10
+five = 5
 
-if x <= a:
-    salaryPromotion = x * (1 + (d/100))
+if currSalry <= a:
+    salaryPromotion = currSalry * (1 + ( twenty /100))
+    difference = salaryPromotion - currSalry
+    percentId = twenty
            
-elif x > a and x <= b:
-    salaryPromotion = x * (1 + (e/100)) 
+elif currSalry > a and currSalry <= b:
+    salaryPromotion = currSalry * (1 + ( fiften /100))
+    difference = salaryPromotion - currSalry
+    percentId = fiften
     
-elif x > b and x <= c:
-    salaryPromotion = x * (1 + (f/100))
+elif currSalry > b and currSalry <= c:
+    salaryPromotion = currSalry * (1 + ( ten /100))
+    difference = salaryPromotion - currSalry
+    percentId = ten
     
-elif x > c:
-    salaryPromotion = x * (1 + (g/100))
+elif currSalry > c:
+    salaryPromotion = currSalry * (1 + ( five /100))
+    difference = salaryPromotion - currSalry
+    percentId = five
     
-
-print(f'O seu salário: ')
-print(f' - antes do reajuste era R$ {x}')
-print(f' - o percentual aplicado {d}') 
-#print(f' - o valor do aumento {rest}')
-print(f' - depois do aumento R$ {salaryPromotion} ')
+print('')
+print(f' - Aplicado percentual de { percentId }%') 
+print(f' - Acrescentado R$ {difference:.2f} ')
+print(f' - Tolizando R$ {salaryPromotion} ')
     
