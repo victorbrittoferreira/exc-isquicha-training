@@ -615,6 +615,7 @@
 #
 #### OR 
 #
+## TRAINNG IT 
 #num_ordered = sorted(num_list, reverse = True )
 #for num in num_ordered:
 #    print(len( num))
@@ -654,3 +655,49 @@
 #else:
 #    print(f'Período inválido')
 
+## 29 As Organizações Tabajara resolveram dar um aumento de salário aos seus
+#colaboradores e lhe contrataram para desenvolver o programa que calculará os
+#reajustes.
+#Faça um programa que recebe o salário de um colaborador e o reajuste segundo o
+#seguinte critério, baseado no salário atual:
+#    salários até R$ 280,00 (incluindo) : aumento de 20%
+#    salários entre R$ 280,00 e R$ 700,00 : aumento de 15%
+#    salários entre R$ 700,00 e R$ 1500,00 : aumento de 10%
+#    salários de R$ 1500,00 em diante :
+#        aumento de 5% Após o aumento ser realizado,
+#    informe na tela:
+#        o salário antes do reajuste;
+#        o percentual de aumento aplicado;
+#        o valor do aumento;
+#        o novo salário, após o aumento.
+
+#currentRemuneration = int (input (
+#    'Digite o quanto ganha atualmente: '
+#))
+
+x = 281
+
+a = 280
+b = 700
+c = 1500
+
+d = 1.2
+e = 1.15
+f = 1.1
+g = 1.05
+
+if x <= a:
+    x *= d
+       
+elif x > a and x <= b:
+    x *= e
+    
+elif x > b and x <= c:
+    x *= f
+    
+elif x > c:
+    x *= g
+    
+
+print('Seu salário antes do reajuste era {}')
+    
