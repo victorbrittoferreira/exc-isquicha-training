@@ -743,6 +743,7 @@
 # O Salário Líquido corresponde ao Salário Bruto menos os descontos.
 # O programa deverá pedir ao usuário o valor da sua hora e a quantidade de horas
 # trabalhadas no mês.
+
 # Desconto do IR:
 #     Salário Bruto até 900 (inclusive) - isento
 #     Salário Bruto até 1500 (inclusive) - desconto de 5%
@@ -756,3 +757,51 @@
 #         FGTS (11%)                      : R$  121,00
 #         Total de descontos              : R$  165,00
 #         Salário Liquido                 : R$  935,00
+
+print('')
+val_hor_trab = float (input (
+    'Digite o quanto ganha por hora R$: '
+))
+print('')
+quant_hor_trab_mes = float (input (
+    'Digite o quantas horas trabalha por mês: '
+))
+
+sal_bruto = val_hor_trab * quant_hor_trab_mes
+print(f'Salario Bruto R$ {sal_bruto:.2f}')
+print('')
+inss = 10
+fgts = 11
+
+if sal_bruto <= 900:
+    ir = 0
+elif sal_bruto <= 1500:
+    ir = 5
+elif sal_bruto <= 2500:
+    ir = 10
+else:
+    ir = 20
+
+desc_ir = sal_bruto * (ir/100)
+desc_inss = desc_ir * (inss/100)
+desc_fgts = desc_inss * (fgts/100)
+
+
+#total_perc_descontos = ir + inss + fgts
+total_perc_descontos = (1 - ir/100) * (1 - inss/100) * (1 - (fgts/100))
+print (total_perc_descontos)
+
+#difer_ent_sal = sal_bruto * ( total_perc_descontos / 100)
+
+sal_liquido = sal_bruto * total_perc_descontos
+
+difer_ent_sal = sal_bruto - sal_liquido 
+
+print(f'IR   % {ir}    - R$ {(ir/100) * sal_bruto:.2f}')
+print(f'INSS % {inss}    - R$ {(inss/100) * sal_bruto:.2f}')
+print(f'FGTS % {fgts}    - R$ {(fgts/100) * sal_bruto:.2f}')
+print('')
+print(f'Total de descontos = R$ {difer_ent_sal:2.2f}')
+print('')
+print(f'Salario Liquido R$ {sal_liquido:3.2f}')
+print('')
