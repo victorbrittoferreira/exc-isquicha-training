@@ -671,41 +671,42 @@
 #        o valor do aumento;
 #        o novo salário, após o aumento.
 
-currSalry = float (input (
-    'Digite o quanto ganha atualmente R$ '
-))
-
-a = 280
-b = 700
-c = 1500
-
-twenty = 20
-fiften = 15
-ten = 10
-five = 5
-
-if currSalry <= a:
-    salaryPromotion = currSalry * (1 + ( twenty /100))
-    difference = salaryPromotion - currSalry
-    percentId = twenty
-           
-elif currSalry > a and currSalry <= b:
-    salaryPromotion = currSalry * (1 + ( fiften /100))
-    difference = salaryPromotion - currSalry
-    percentId = fiften
-    
-elif currSalry > b and currSalry <= c:
-    salaryPromotion = currSalry * (1 + ( ten /100))
-    difference = salaryPromotion - currSalry
-    percentId = ten
-    
-elif currSalry > c:
-    salaryPromotion = currSalry * (1 + ( five /100))
-    difference = salaryPromotion - currSalry
-    percentId = five
-    
-print('')
-print(f' - Aplicado percentual de { percentId }%') 
-print(f' - Acrescentado R$ {difference:.2f} ')
-print(f' - Tolizando R$ {salaryPromotion} ')
+#print('')
+#currSalry = float (input (
+#    'Digite o quanto ganha atualmente R$ '
+#))
+#
+#a = 280
+#b = 700
+#c = 1500
+#
+#twenty = 20
+#fiften = 15
+#ten = 10
+#five = 5
+#
+#if currSalry <= a:
+#    salaryPromotion = currSalry * (1 + ( twenty /100))
+#    difference = salaryPromotion - currSalry
+#    percentId = twenty
+#           
+#elif currSalry > a and currSalry <= b:
+#    salaryPromotion = currSalry * (1 + ( fiften /100))
+#    difference = salaryPromotion - currSalry
+#    percentId = fiften
+#    
+#elif currSalry > b and currSalry <= c:
+#    salaryPromotion = currSalry * (1 + ( ten /100))
+#    difference = salaryPromotion - currSalry
+#    percentId = ten
+#    
+#elif currSalry > c:
+#    salaryPromotion = currSalry * (1 + ( five /100))
+#    difference = salaryPromotion - currSalry
+#    percentId = five
+#    
+#print('')
+#print(f' - Aplicado percentual de { percentId }%') 
+#print(f' - Acrescentado R$ {difference:.2f} ')
+#print(f' - Tolizando R$ {salaryPromotion:.2f} ')
     
