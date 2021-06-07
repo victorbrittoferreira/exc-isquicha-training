@@ -770,8 +770,12 @@ quant_hor_trab_mes = float (input (
 sal_bruto = val_hor_trab * quant_hor_trab_mes
 print(f'Salario Bruto R$ {sal_bruto:.2f}')
 print('')
+
+#
+
 inss = 10
 fgts = 11
+ir = 0
 
 if sal_bruto <= 900:
     ir = 0
@@ -782,26 +786,30 @@ elif sal_bruto <= 2500:
 else:
     ir = 20
 
-desc_ir = sal_bruto * (ir/100)
-desc_inss = desc_ir * (inss/100)
-desc_fgts = desc_inss * (fgts/100)
+#
+
+desc_ir = sal_bruto * (1 - (ir/100))
 
 
-#total_perc_descontos = ir + inss + fgts
-total_perc_descontos = (1 - ir/100) * (1 - inss/100) * (1 - (fgts/100))
-print (total_perc_descontos)
+desc_inss = desc_ir  * (1 - (inss/100))
 
-#difer_ent_sal = sal_bruto * ( total_perc_descontos / 100)
 
-sal_liquido = sal_bruto * total_perc_descontos
+desc_fgts = desc_inss * (1 - (fgts/100))
 
-difer_ent_sal = sal_bruto - sal_liquido 
+#
 
-print(f'IR   % {ir}    - R$ {(ir/100) * sal_bruto:.2f}')
-print(f'INSS % {inss}    - R$ {(inss/100) * sal_bruto:.2f}')
-print(f'FGTS % {fgts}    - R$ {(fgts/100) * sal_bruto:.2f}')
+total_descontos = sal_bruto - desc_fgts
+
+sal_liquido = desc_fgts
+
+
+
+
+print(f'IR   % {ir}     - R$ {sal_bruto - desc_ir:.2f}')
+print(f'INSS % {inss}    - R$ {desc_ir - desc_inss:.2f}')
+print(f'FGTS % {fgts}    - R$ {desc_inss - desc_fgts:.2f}')
 print('')
-print(f'Total de descontos = R$ {difer_ent_sal:2.2f}')
+print(f'Total de descontos = R$ {total_descontos:.2f}')
 print('')
-print(f'Salario Liquido R$ {sal_liquido:3.2f}')
+print(f'Salario Liquido R$ {sal_liquido:.2f}')
 print('')
