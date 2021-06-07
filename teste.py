@@ -775,7 +775,6 @@ print('')
 
 inss = 10
 fgts = 11
-ir = 0
 
 if sal_bruto <= 900:
     ir = 0
@@ -788,28 +787,27 @@ else:
 
 #
 
-desc_ir = sal_bruto * (1 - (ir/100))
+#desc_ir = sal_bruto * (1 - (ir/100))
+desc_ir = sal_bruto * (ir/100)
 
+desc_inss = (sal_bruto - desc_ir) * (inss/100)
 
-desc_inss = desc_ir  * (1 - (inss/100))
-
-
-desc_fgts = desc_inss * (1 - (fgts/100))
+desc_fgts = (sal_bruto - desc_ir - desc_inss) * (fgts/100)
 
 #
 
-total_descontos = sal_bruto - desc_fgts
+total_descontos = desc_ir + desc_fgts + desc_fgts
 
-sal_liquido = desc_fgts
+sal_liquido = sal_bruto - total_descontos
 
-
-
-
-print(f'IR   % {ir}     - R$ {sal_bruto - desc_ir:.2f}')
-print(f'INSS % {inss}    - R$ {desc_ir - desc_inss:.2f}')
-print(f'FGTS % {fgts}    - R$ {desc_inss - desc_fgts:.2f}')
+print(f'IR   % {ir} - R$ {desc_ir:.2f}')
+print(f'INSS % {inss} - R$ {desc_ir:.2f}')
+print(f'FGTS % {fgts} - R$ {desc_inss:.2f}')
 print('')
 print(f'Total de descontos = R$ {total_descontos:.2f}')
 print('')
 print(f'Salario Liquido R$ {sal_liquido:.2f}')
 print('')
+
+
+## 31 
