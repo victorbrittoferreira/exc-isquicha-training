@@ -757,57 +757,74 @@
 #         FGTS (11%)                      : R$  121,00
 #         Total de descontos              : R$  165,00
 #         Salário Liquido                 : R$  935,00
-
-print('')
-val_hor_trab = float (input (
-    'Digite o quanto ganha por hora R$: '
-))
-print('')
-quant_hor_trab_mes = float (input (
-    'Digite o quantas horas trabalha por mês: '
-))
-
-sal_bruto = val_hor_trab * quant_hor_trab_mes
-print(f'Salario Bruto R$ {sal_bruto:.2f}')
-print('')
-
 #
+#print('')
+#val_hor_trab = float (input (
+#    'Digite o quanto ganha por hora R$: '
+#))
+#print('')
+#quant_hor_trab_mes = float (input (
+#    'Digite o quantas horas trabalha por mês: '
+#))
+#
+#sal_bruto = val_hor_trab * quant_hor_trab_mes
+#print(f'Salario Bruto R$ {sal_bruto:.2f}')
+#print('')
+#
+##
+#
+#inss = 10
+#fgts = 11
+#
+#if sal_bruto <= 900:
+#    ir = 0
+#elif sal_bruto <= 1500:
+#    ir = 5
+#elif sal_bruto <= 2500:
+#    ir = 10
+#else:
+#    ir = 20
+#
+##
+#
+##desc_ir = sal_bruto * (1 - (ir/100))
+#desc_ir = sal_bruto * (ir/100)
+#
+#desc_inss = (sal_bruto - desc_ir) * (inss/100)
+#
+#desc_fgts = (sal_bruto - desc_ir - desc_inss) * (fgts/100)
+#
+##
+#
+#total_descontos = desc_ir + desc_inss + desc_fgts
+#
+#sal_liquido = sal_bruto - total_descontos
+#
+#print(f'IR   % {ir} - R$ {desc_ir:.2f}')
+#print(f'INSS % {inss} - R$ {desc_inss:.2f}')
+#print(f'FGTS % {fgts} - R$ {desc_fgts:.2f}')
+#print('')
+#print(f'Total de descontos = R$ {total_descontos:.2f}')
+#print('')
+#print(f'Salario Liquido R$ {sal_liquido:.2f}')
+#print('')
 
-inss = 10
-fgts = 11
 
-if sal_bruto <= 900:
-    ir = 0
-elif sal_bruto <= 1500:
-    ir = 5
-elif sal_bruto <= 2500:
-    ir = 10
+## 31 Faça um Programa que leia um número e exiba o dia correspondente da semana.
+#(1-Domingo, 2- Segunda, etc.),
+#se digitar outro valor deve aparecer valor inválido.
+
+print('')
+qual_dia = int (input (
+    'Digite digite o número do dia da semana: '
+))
+
+semana = ['','Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado' ]
+#semana = [None] + semana
+
+
+if qual_dia == 0 or qual_dia >= 8:
+        print('INVÁLIDO')
+        
 else:
-    ir = 20
-
-#
-
-#desc_ir = sal_bruto * (1 - (ir/100))
-desc_ir = sal_bruto * (ir/100)
-
-desc_inss = (sal_bruto - desc_ir) * (inss/100)
-
-desc_fgts = (sal_bruto - desc_ir - desc_inss) * (fgts/100)
-
-#
-
-total_descontos = desc_ir + desc_fgts + desc_fgts
-
-sal_liquido = sal_bruto - total_descontos
-
-print(f'IR   % {ir} - R$ {desc_ir:.2f}')
-print(f'INSS % {inss} - R$ {desc_ir:.2f}')
-print(f'FGTS % {fgts} - R$ {desc_inss:.2f}')
-print('')
-print(f'Total de descontos = R$ {total_descontos:.2f}')
-print('')
-print(f'Salario Liquido R$ {sal_liquido:.2f}')
-print('')
-
-
-## 31 
+    print(f'O dia da semana é:',semana[qual_dia])
