@@ -843,43 +843,88 @@
 #o conceito correspondente e a mensagem “APROVADO” se o conceito for A, B ou C
 #ou “REPROVADO” se o conceito for D ou E.
 
-print('')
-nota1 = float (input ('Digite digite a primeira nota: '
-))
+#print('')
+#nota1 = float (input ('Digite digite a primeira nota: '
+#))
+#
+#print('')
+#nota2 = float (input ('Digite digite a segunda nota: '
+#))
+#
+#### MEDIA
+#
+#media = (nota1 + nota2) / 2
+#
+#letra = ''
+#
+#if media >= 9:
+#    letra = 'A'
+#    
+#elif media >= 7.5:
+#    letra = 'B'
+#
+#elif media >= 6:
+#    letra = 'C'
+#
+#elif  media >= 4:
+#    letra = 'D'
+#else:
+#    letra = 'E'
+#    
+### CATEGORIA
+#    
+##aprovado = ['A', 'B', 'C']
+#reprovado = ['D', 'E']
+#
+#if letra in reprovado:
+#    print(f'Aluno REPROVADO \n Nota: {letra}\n Média: {media:.2f}')
+#else:
+#    print(f'Aluno APROVADO \n Nota: {letra}\n Média: {media:.2f}')
 
-print('')
-nota2 = float (input ('Digite digite a segunda nota: '
-))
 
-### MEDIA
-
-media = (nota1 + nota2) / 2
-
-letra = ''
-
-if media >= 9:
-    letra = 'A'
-    
-elif media >= 7.5:
-    letra = 'B'
-
-elif media >= 6:
-    letra = 'C'
-
-elif  media >= 4:
-    letra = 'D'
-else:
-    letra = 'E'
-    
-## CATEGORIA
-    
-#aprovado = ['A', 'B', 'C']
-reprovado = ['D', 'E']
+## 33 Faça um Programa que peça os 3 lados de um triângulo.
+#O programa deverá informar se os valores podem ser um triângulo.
+#Indique, caso os lados formem um triângulo, se o mesmo é:
+#    equilátero, isósceles ou escaleno.
 
 
-if letra in reprovado:
-    print(f'Aluno REPROVADO \n Nota: {letra}\n Média: {media:.2f}')
-else:
-    print(f'Aluno APROVADO \n Nota: {letra}\n Média: {media:.2f}')
-
-
+#print('')
+#lado1 = float (input ('Digite digite a media do primeiro lado: '
+#))
+#
+#print('')
+#lado2 = float (input ('Digite digite a media do segundo lado: '
+#))
+#
+#print('')
+#lado3 = float (input ('Digite digite a media do terceiro lado: '
+#))
+#
+#
+### Conceito geral de triangulo
+#
+#if (lado1 + lado2 > lado3
+#    and lado1 + lado3 > lado2
+#    and lado3 + lado2 > lado1
+#):
+#    #EQUILATERO
+#    if lado1 == lado2 == lado3:
+#        print('EQUILATERO')
+#        
+#    #ISOSCELES
+#    elif (lado1 == lado2
+#        or lado1 == lado3
+#        or lado2 == lado3
+#    ):
+#        print('ISOSCELES')
+#    
+#    #ESCALENO:
+#    else:
+#        print('ESCALENO')
+#
+##NÃO É TRIANGULO 
+#else:
+#    print('Não é triangulo' )
+        
+        
+        
