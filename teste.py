@@ -814,20 +814,72 @@
 #(1-Domingo, 2- Segunda, etc.),
 #se digitar outro valor deve aparecer valor inválido.
 
+#print('')
+#qual_dia = int (input (
+#    'Digite digite o número do dia da semana: '
+#))
+#
+#semana = ['','Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado' ]
+##semana = [None] + semana
+#
+#
+#if qual_dia == 0 or qual_dia >= 8:
+#        print('INVÁLIDO')
+#        
+#else:
+#    print(f'O dia da semana é:',semana[qual_dia])
+
+
+##32 Faça um programa que lê as duas notas parciais obtidas por um aluno numa
+#disciplina ao longo de um semestre, e calcule a sua média.
+#A atribuição de conceitos obedece à tabela abaixo:
+#    Média de Aproveitamento  Conceito
+#    Entre 9.0 e 10.0         A
+#    Entre 7.5 e 9.0          B
+#    Entre 6.0 e 7.5          C
+#    Entre 4.0 e 6.0          D
+#    Entre 4.0 e zero         E
+#O algoritmo deve mostrar na tela as notas, a média,
+#o conceito correspondente e a mensagem “APROVADO” se o conceito for A, B ou C
+#ou “REPROVADO” se o conceito for D ou E.
+
 print('')
-qual_dia = int (input (
-    'Digite digite o número do dia da semana: '
+nota1 = float (input ('Digite digite a primeira nota: '
 ))
 
-semana = ['','Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado' ]
-#semana = [None] + semana
+print('')
+nota2 = float (input ('Digite digite a segunda nota: '
+))
 
+### MEDIA
 
-if qual_dia == 0 or qual_dia >= 8:
-        print('INVÁLIDO')
-        
-else:
-    print(f'O dia da semana é:',semana[qual_dia])
+media = (nota1 + nota2) / 2
+
+letra = ''
+
+if media >= 9:
+    letra = 'A'
     
-    x
-    y
+elif media >= 7.5:
+    letra = 'B'
+
+elif media >= 6:
+    letra = 'C'
+
+elif  media >= 4:
+    letra = 'D'
+else:
+    letra = 'E'
+    
+## CATEGORIA
+    
+#aprovado = ['A', 'B', 'C']
+reprovado = ['D', 'E']
+
+
+if letra in reprovado:
+    print(f'Aluno REPROVADO \n Nota: {letra}\n Média: {media:.2f}')
+else:
+    print(f'Aluno APROVADO \n Nota: {letra}\n Média: {media:.2f}')
+
+
