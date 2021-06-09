@@ -828,3 +828,5 @@ if qual_dia == 0 or qual_dia >= 8:
         
 else:
     print(f'O dia da semana é:',semana[qual_dia])
+    
+    x
