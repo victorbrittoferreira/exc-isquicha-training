@@ -926,5 +926,65 @@
 #else:
 #    print('Não é triangulo' )
         
-        
-        
+
+## 34 Faça um programa que calcule as raízes de uma equação do segundo grau,
+#na forma ax² + bx + c.
+#O programa deverá pedir os valores de a, b e c e fazer as consistências,
+#informando ao usuário nas seguintes situações:
+#    Se o usuário informar o valor de A igual a zero, a equação não é do segundo
+#        grau e o programa não deve fazer pedir os demais valores,
+#        sendo encerrado;
+#    Se o delta calculado for negativo, a equação não possui raízes reais.
+#        Informe ao usuário e encerre o programa;
+#    Se o delta calculado for igual a zero a equação possui apenas uma raiz
+#        real; informe-a ao usuário;
+#    Se o delta for positivo, a equação possui duas raiz reais;
+#        informe-as ao usuário;
+
+print('')
+a = float (input ('Digite digite o valor de a: '
+))
+
+print('')
+b = float (input ('Digite digite o valor de b: '
+))
+
+print('')
+c = float (input ('Digite digite o valor de c: '
+))
+
+x = 1
+
+## uma maneira de achar a raiz quadra ( 1 / 2) / ou raiz cubica = 1 / 3
+sqrt = 1 / 2
+
+d = (b ** 2) - 4 * a * c
+
+print (F'DELTA {d}')
+
+
+
+r1 = ( (- b) + ( d ** sqrt ) )/ 2 * a
+
+r2 = ( (- b) - ( d ** sqrt ) )/ 2 * a
+
+z = d ** sqrt
+print (F'RAIZ DELTA {z:.2f}')
+
+print (f'R1 {r1:.2f}')
+print (f'R2 {r2:.2f}')
+
+
+if a == 0:
+    print('Não é uma equação de segundo grau')
+
+elif d < 0:
+    print ('A equação não possui raizes reais')
+    
+elif d == 0:
+          print (f'A equação possui raizes iguais e reais R1: {r1:.2f}')
+
+else:
+    print (f'A equação possui duas raizes reais\n R1:{r1:.2f} \nR2: {r2:.2f}')
+    
+## melhorar o processamento
