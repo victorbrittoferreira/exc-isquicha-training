@@ -975,33 +975,44 @@
     
 ## melhorar o processamento
 
+#print('')
+#a = float (input ('Digite digite o valor de a: '
+#))
+#if a == 0:
+#    print('Não é uma equação de segundo grau ')
+#    
+#else:
+#    print('')        
+#    b = float (input ('Digite digite o valor de b: '))
+#    print('')
+#    c = float (input ('Digite digite o valor de c: '))
+#
+#    delta = (b ** 2) - (4 * a * c)
+#    
+#    if delta < 0:
+#        print ('A equação não possui raizes reais')
+#
+#    elif delta == 0:
+#        raiz = - b / 2 * a
+#        print (
+#            f'A equação possui raizes iguais\n reais R1: {raiz:.2f}')
+#
+#    else:
+#        sqrt = 1 / 2
+#        
+#        raiz1 = ( ( (- b ) + ( delta ** sqrt ) ) / ( 2 * a ) )
+#        raiz2 = ( ( (- b ) - ( delta ** sqrt ) ) / ( 2 * a ) )
+#        print (
+#            f'A equação possui duas raizes reais\nR1:  {raiz1:.2f} \nR2: {raiz2:.2f}')
+
+
+## 35 Faça um Programa que peça um número correspondente a um determinado ano e em
+#seguida informe se este ano é ou não bissexto.
+
 print('')
-a = float (input ('Digite digite o valor de a: '
-))
-if a == 0:
-    print('Não é uma equação de segundo grau ')
-    
+ano = int (input ('Digite digite o ano: '))
+
+if ano % 4 == 0 and ( ano % 100 != 0 or ano % 400 == 0):
+    print(f' O {ano} é bissexto')
 else:
-    print('')        
-    b = float (input ('Digite digite o valor de b: '))
-    print('')
-    c = float (input ('Digite digite o valor de c: '))
-
-    delta = (b ** 2) - (4 * a * c)
-    
-    if delta < 0:
-        print ('A equação não possui raizes reais')
-
-    elif delta == 0:
-        raiz = - b / 2 * a
-        print (
-            f'A equação possui raizes iguais\n reais R1: {raiz:.2f}')
-
-    else:
-        sqrt = 1 / 2
-        
-        raiz1 = ( ( (- b ) + ( delta ** sqrt ) ) / ( 2 * a ) )
-        raiz2 = ( ( (- b ) - ( delta ** sqrt ) ) / ( 2 * a ) )
-        print (
-            f'A equação possui duas raizes reais\nR1:  {raiz1:.2f} \nR2: {raiz2:.2f}')
-
+    print(f' O {ano} não é bissexto')
