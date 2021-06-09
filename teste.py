@@ -830,3 +830,4 @@ else:
     print(f'O dia da semana é:',semana[qual_dia])
     
     x
+    y
