@@ -941,50 +941,67 @@
 #    Se o delta for positivo, a equação possui duas raiz reais;
 #        informe-as ao usuário;
 
+#print('')
+#a = float (input ('Digite digite o valor de a: '
+#))
+#
+#print('')
+#b = float (input ('Digite digite o valor de b: '
+#))
+#
+#print('')
+#c = float (input ('Digite digite o valor de c: '
+#))
+#
+### uma maneira de achar a raiz quadra ( 1 / 2) / ou raiz cubica = 1 / 3
+#sqrt = 1 / 2
+#
+#delta = (b ** 2) - (4 * a * c)
+#
+#raiz1 = ( ( (- b ) + ( delta ** sqrt ) ) / ( 2 * a ) )
+#raiz2 = ( ( (- b ) - ( delta ** sqrt ) ) / ( 2 * a ) )
+#
+#if a == 0:
+#    print('Não é uma equação de segundo grau')
+#
+#elif delta < 0:
+#    print ('A equação não possui raizes reais')
+#    
+#elif delta == 0:
+#          print (f'A equação possui raizes iguais e reais R1: {raiz1:.2f}')
+#
+#else:
+#    print (f'A equação possui duas raizes reais\n R1:{raiz1:.2f} \nR2: {raiz2:.2f}')
+    
+## melhorar o processamento
+
 print('')
 a = float (input ('Digite digite o valor de a: '
 ))
-
-print('')
-b = float (input ('Digite digite o valor de b: '
-))
-
-print('')
-c = float (input ('Digite digite o valor de c: '
-))
-
-x = 1
-
-## uma maneira de achar a raiz quadra ( 1 / 2) / ou raiz cubica = 1 / 3
-sqrt = 1 / 2
-
-d = (b ** 2) - 4 * a * c
-
-print (F'DELTA {d}')
-
-
-
-r1 = ( (- b) + ( d ** sqrt ) )/ 2 * a
-
-r2 = ( (- b) - ( d ** sqrt ) )/ 2 * a
-
-z = d ** sqrt
-print (F'RAIZ DELTA {z:.2f}')
-
-print (f'R1 {r1:.2f}')
-print (f'R2 {r2:.2f}')
-
-
 if a == 0:
-    print('Não é uma equação de segundo grau')
-
-elif d < 0:
-    print ('A equação não possui raizes reais')
+    print('Não é uma equação de segundo grau ')
     
-elif d == 0:
-          print (f'A equação possui raizes iguais e reais R1: {r1:.2f}')
-
 else:
-    print (f'A equação possui duas raizes reais\n R1:{r1:.2f} \nR2: {r2:.2f}')
+    print('')        
+    b = float (input ('Digite digite o valor de b: '))
+    print('')
+    c = float (input ('Digite digite o valor de c: '))
+
+    delta = (b ** 2) - (4 * a * c)
     
-## melhorar o processamento
+    if delta < 0:
+        print ('A equação não possui raizes reais')
+
+    elif delta == 0:
+        raiz = - b / 2 * a
+        print (
+            f'A equação possui raizes iguais\n reais R1: {raiz:.2f}')
+
+    else:
+        sqrt = 1 / 2
+        
+        raiz1 = ( ( (- b ) + ( delta ** sqrt ) ) / ( 2 * a ) )
+        raiz2 = ( ( (- b ) - ( delta ** sqrt ) ) / ( 2 * a ) )
+        print (
+            f'A equação possui duas raizes reais\nR1:  {raiz1:.2f} \nR2: {raiz2:.2f}')
+
