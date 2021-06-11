@@ -820,14 +820,31 @@
 #))
 #
 #semana = ['','Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado' ]
-##semana = [None] + semana
-#
 #
 #if qual_dia == 0 or qual_dia >= 8:
 #        print('INVÁLIDO')
 #        
 #else:
 #    print(f'O dia da semana é:',semana[qual_dia])
+
+## A BETTER WAY
+    
+print('')
+qual_dia = int (input ('Digite digite o número do dia da semana: '))
+
+dias_semana = ['0','Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado' ]
+
+def  dia_semana(qual_dia):
+
+    if not 1 <= qual_dia <= 7:
+        return 'INEXISTENTE'
+
+    return (dias_semana[qual_dia])
+
+print(f'O dia da semana é {dia_semana(qual_dia)}')    
+    
+
+    
 
 
 ##32 Faça um programa que lê as duas notas parciais obtidas por um aluno numa
@@ -1009,10 +1026,10 @@
 ## 35 Faça um Programa que peça um número correspondente a um determinado ano e em
 #seguida informe se este ano é ou não bissexto.
 
-print('')
-ano = int (input ('Digite digite o ano: '))
-
-if ano % 4 == 0 and ( ano % 100 != 0 or ano % 400 == 0):
-    print(f' O {ano} é bissexto')
-else:
-    print(f' O {ano} não é bissexto')
+#print('')
+#ano = int (input ('Digite digite o ano: '))
+#
+#if ano % 4 == 0 and ( ano % 100 != 0 or ano % 400 == 0):
+#    print(f' O {ano} é bissexto')
+#else:
+#    print(f' O {ano} não é bissexto')
