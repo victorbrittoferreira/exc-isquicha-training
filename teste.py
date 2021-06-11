@@ -837,15 +837,20 @@ dias_semana = ['0','Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 
 def  dia_semana(qual_dia):
 
     if not 1 <= qual_dia <= 7:
-        return 'INEXISTENTE'
+        #return 'Dia INEXISTENTE
+        print(f'O dia "{qual_dia}" da semana é inexistente!')
 
-    return (dias_semana[qual_dia])
+    else:
+        print(f'O dia "{qual_dia}" da semana é {dias_semana[qual_dia]}!')
+        
+dia_semana(qual_dia)
 
-print(f'O dia da semana é {dia_semana(qual_dia)}')    
+
+#print (f'y {dia_semana(qual_dia)}')
+
+#print('')
+#print(f'O dia da semana é {dia_semana(qual_dia)}')    
     
-
-    
-
 
 ##32 Faça um programa que lê as duas notas parciais obtidas por um aluno numa
 #disciplina ao longo de um semestre, e calcule a sua média.
@@ -967,6 +972,7 @@ print(f'O dia da semana é {dia_semana(qual_dia)}')
 #))
 #
 #print('')
+#if a == 0:
 #c = float (input ('Digite digite o valor de c: '
 #))
 #
@@ -978,7 +984,6 @@ print(f'O dia da semana é {dia_semana(qual_dia)}')
 #raiz1 = ( ( (- b ) + ( delta ** sqrt ) ) / ( 2 * a ) )
 #raiz2 = ( ( (- b ) - ( delta ** sqrt ) ) / ( 2 * a ) )
 #
-#if a == 0:
 #    print('Não é uma equação de segundo grau')
 #
 #elif delta < 0:
@@ -1030,6 +1035,6 @@ print(f'O dia da semana é {dia_semana(qual_dia)}')
 #ano = int (input ('Digite digite o ano: '))
 #
 #if ano % 4 == 0 and ( ano % 100 != 0 or ano % 400 == 0):
-#    print(f' O {ano} é bissexto')
+#    print(f' O ano {ano} é bissexto')
 #else:
-#    print(f' O {ano} não é bissexto')
+#    print(f' O ano {ano} não é bissexto')
