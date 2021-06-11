@@ -829,21 +829,21 @@
 
 ## A BETTER WAY
     
-print('')
-qual_dia = int (input ('Digite digite o número do dia da semana: '))
-
-dias_semana = ['0','Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado' ]
-
-def  dia_semana(qual_dia):
-
-    if not 1 <= qual_dia <= 7:
-        #return 'Dia INEXISTENTE
-        print(f'O dia "{qual_dia}" da semana é inexistente!')
-
-    else:
-        print(f'O dia "{qual_dia}" da semana é {dias_semana[qual_dia]}!')
-        
-dia_semana(qual_dia)
+#print('')
+#qual_dia = int (input ('Digite digite o número do dia da semana: '))
+#
+#dias_semana = ['0','Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado' ]
+#
+#def  dia_semana(qual_dia):
+#
+#    if not 1 <= qual_dia <= 7:
+#        #return 'Dia INEXISTENTE
+#        print(f'O dia "{qual_dia}" da semana é inexistente!')
+#
+#    else:
+#        print(f'O dia "{qual_dia}" da semana é {dias_semana[qual_dia]}!')
+#        
+#dia_semana(qual_dia)
 
 
 #print (f'y {dia_semana(qual_dia)}')
