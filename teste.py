@@ -1031,10 +1031,44 @@
 ## 35 Faça um Programa que peça um número correspondente a um determinado ano e em
 #seguida informe se este ano é ou não bissexto.
 
+## CONTINUAR
+
 #print('')
 #ano = int (input ('Digite digite o ano: '))
+#print('')
+#mes = int ( input ('Digite o mês '))
+#print('')
 #
-#if ano % 4 == 0 and ( ano % 100 != 0 or ano % 400 == 0):
-#    print(f' O ano {ano} é bissexto')
-#else:
-#    print(f' O ano {ano} não é bissexto')
+#dias_meses = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+#
+#meses = [ 0 , 'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 
+#        'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
+#
+#def ano_bissexto(ano):
+#    if ano % 4 == 0 and ( ano % 100 != 0 or ano % 400 == 0):
+#        print(f'O ano {ano} é bissexto')
+#    else:
+#        print(f'O ano {ano} não é bissexto')
+#        
+#        
+#ano_bissexto(ano)
+#
+#
+#def dias_mes(ano, mes):
+# #   """Return number of days in that month in that year."""
+#    if not 1 <= dias_meses <= 12:
+#        print('O mês {mes} é inexistente!')
+#
+#    if dias_meses == 2 and ano_bissexto(ano):
+#        return 29
+#
+#    return dias_meses[month]
+
+#def days_in_year(days. month):
+#   return (month_days)
+
+#print(f'O mês {days_in_month(year, month)} dias do ano de {(is_leap(year))}')
+#print (days_in_month(2020, 9))
+#print (ano_bissexto(2020))
+#print(day_in_year(2020))
+
