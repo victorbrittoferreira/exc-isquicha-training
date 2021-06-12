@@ -1079,7 +1079,7 @@
 #print('')
 #date =  input ('Digite digite a data no formato dd/mm/aaaa: ')
 
-date = '23/13/1991'
+date = '23/09/1991'
 
 ##elements are equal math   x = x
 day, month, year = date.split('/')
@@ -1100,8 +1100,8 @@ def month_checker(month):
         return False
     return True
 def year_checker(year):
-    if not 1 >= year:
-        False    
+    if not 1 <= year:
+        return False    
     return True
 
 
@@ -1110,33 +1110,9 @@ if ( day_checker(day) and month_checker(month) and year_checker(year)) == True:
     
 else: print ('Data invalida')
 
-
-#def date ( day , month , year ) :
-    
-#    if 1 <= day <= 31:
-#        return True
-#    else: False
-#    
-#    if 1 <= month <= 12:
-#    #print(f' mes {bool(1 <= month <= 12)}')
-#        return True
-#    else: False
-#    
-#    if 1 <= year :
-#        return True
-#    else: True
-#
-#if date ( day , month , year ) == True:
-#    print ('A data valida')
-#else:
-#    print ('A data invalida')
-#
-#print(date (day , month, year ))
-
-
-#
-#date ( day , month, year )
-
+print (day_checker(day))
+print (month_checker(month))
+print (year_checker(year))
 
 
     #if year == 0:
