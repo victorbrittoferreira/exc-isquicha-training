@@ -1072,3 +1072,76 @@
 #print (ano_bissexto(2020))
 #print(day_in_year(2020))
 
+
+## 36 Faça um Programa que peça uma data no formato dd/mm/aaaa e determine se a mesma
+#é uma data válida.
+
+#print('')
+#date =  input ('Digite digite a data no formato dd/mm/aaaa: ')
+
+date = '23/13/1991'
+
+##elements are equal math   x = x
+day, month, year = date.split('/')
+
+day, month , year = int(day) , int(month) , int (year)                        
+
+print(bool(1 <= day <= 31))
+print(bool(1 <= month <= 12))
+print(bool(1 <= year ))
+print('')
+
+def day_checker(day):
+    if not 1 <= day <= 31:
+        return False
+    return True
+def month_checker(month):
+    if not 1 <= month <= 12:
+        return False
+    return True
+def year_checker(year):
+    if not 1 >= year:
+        False    
+    return True
+
+
+if ( day_checker(day) and month_checker(month) and year_checker(year)) == True:
+    print ('Data valida')
+    
+else: print ('Data invalida')
+
+
+#def date ( day , month , year ) :
+    
+#    if 1 <= day <= 31:
+#        return True
+#    else: False
+#    
+#    if 1 <= month <= 12:
+#    #print(f' mes {bool(1 <= month <= 12)}')
+#        return True
+#    else: False
+#    
+#    if 1 <= year :
+#        return True
+#    else: True
+#
+#if date ( day , month , year ) == True:
+#    print ('A data valida')
+#else:
+#    print ('A data invalida')
+#
+#print(date (day , month, year ))
+
+
+#
+#date ( day , month, year )
+
+
+
+    #if year == 0:
+    #    return False
+    #if  1 > year:
+    #    #return f'{year} B.C.'
+    #    return True
+    #return f'{year} A.D.'
