@@ -1076,7 +1076,7 @@
 ## 36 Faça um Programa que peça uma data no formato dd/mm/aaaa e determine se a mesma
 #é uma data válida.
 
-#print('')
+print('')
 #date =  input ('Digite digite a data no formato dd/mm/aaaa: ')
 
 date = '23/09/1991'
@@ -1086,34 +1086,79 @@ day, month, year = date.split('/')
 
 day, month , year = int(day) , int(month) , int (year)                        
 
-print(bool(1 <= day <= 31))
-print(bool(1 <= month <= 12))
-print(bool(1 <= year ))
-print('')
-
-def day_checker(day):
-    if not 1 <= day <= 31:
-        return False
-    return True
-def month_checker(month):
-    if not 1 <= month <= 12:
-        return False
-    return True
-def year_checker(year):
-    if not 1 <= year:
-        return False    
-    return True
+#print(1 <= day <= 31)
 
 
-if ( day_checker(day) and month_checker(month) and year_checker(year)) == True:
-    print ('Data valida')
+def date_checker (day, month, year):
+day_checker = 1 <= day <= 31
+        #raise ValueError ('Dia inválido')
+    #    return False    
+    #print('True')
+    #return True
+
+    #def day_checker(day):
+    #    if not 1 <= day <= 31:
+    #        #raise ValueError ('Dia inválido')
+    #        return False    
+    #    #print('True')
+    #    return True
+month_checker =  1 <= month <= 12
+#            #raise ValueError ('Mês inválido')
+#            return False
+#        return True
+year_checker =  1 <= year
+#            #raise ValueError ('Ano inválido')
+#            return False    
+#        return True
+#        print(day_checker(day))
+#        print(month_checker(month))
+#        print(year_checker(year))
+    #print(date_checker (day_checker, month_checker, year_checker ))
     
-else: print ('Data invalida')
+    
+    
+    #if day_checker and month_checker and year_checker== True:
+    if day_checker and month_checker and year_checker == True:
+        print('Data válida')
+    else:
+        print('Data inválida')
+            
+            
+date_checker (day_checker, month_checker, year_checker )
 
-print (day_checker(day))
-print (month_checker(month))
-print (year_checker(year))
+#print (day_checker)
+#print (month_checker)
+#print (year_checker)
 
+
+
+
+
+############################
+
+#if ( day_checker(day) and month_checker(month) and year_checker(year)) == True:
+#    print ('Data valida')
+#    
+#else: print ('Data invalida')
+
+
+#def day_checker(day):
+#    if not 1 <= day <= 31:
+#        return False
+#    return True
+#def month_checker(month):
+#    if not 1 <= month <= 12:
+#        return False
+#    return True
+#def year_checker(year):
+#    if not 1 <= year:
+#        return False    
+#    return True
+#
+#if ( day_checker(day) and month_checker(month) and year_checker(year)) == True:
+#    print ('Data valida')
+#    
+#else: print ('Data invalida')
 
     #if year == 0:
     #    return False
