@@ -123,14 +123,15 @@
 #print("O terceiro elevado ao cubo é {}".format(rd_calc))
 
 #########  
-#i = input("Digite um número inteiro: ")
-#
-#def integer (i):
-#    if i % 1 == 0:
-#        return print( 'nope')
-#    else:
-#        return print('try again')
-    
+i = float (input("Digite um número inteiro: "))
+
+def integer (i):
+    if i % 1 == 0:
+        return 'Inteiro'
+    else:
+        return 'Variável'
+
+print(integer(i))
 
 
 
@@ -1076,70 +1077,80 @@
 ## 36 Faça um Programa que peça uma data no formato dd/mm/aaaa e determine se a mesma
 #é uma data válida.
 
-print('')
-#date =  input ('Digite digite a data no formato dd/mm/aaaa: ')
+#print('')
 
-date = '0/0/0'
 
-##IMPORTANTelements are equal math   x = x
-day, month, year = date.split('/')
-
-day, month , year = int(day) , int(month) , int (year)                        
-
-def date_checker (day, month, year):
-
-    def day_checker(day):
-        if 1 <= day <= 31:
-            return True
-        return False
-        #raise ValueError ('Dia inválido')
-
-    def month_checker(month):
-        if  1 <= month <= 12:
-            return True
-        return False
-        #raise ValueError ('Mês inválido')
+#while True:
+#    try:
+#        x = int (input("Digite uma data no formato dd/mm/aaaa: ")) 
+#        if x >= 0:
+#            break
+#        else:
+#            print('teste')
+#    except ValueError:    
+#        print(' dd/mm/yy !')
+#    continue
+    #retries = retries - 1
+    #if retries < 0:
+    #    raise ValueError('Numeros de data inválidos')
+    #print('x')
     
-    def year_checker(year):
-        if 1 <= year:
-            return True
-        return False
-        #raise ValueError ('Ano inválido')
   
-    
-    if day_checker(day) and month_checker(month) and year_checker(year) == True:
-        return('Data válida')
-    elif day_checker(day) == False:
-        return(f'Dia {day} inválida')
-    elif month_checker(month) == False:
-        return(f'Mês {month} inválido')
-    elif year_checker(year) == False:
-        return(f'Ano {year} inválido')
-        
+#while False:
+#    try:
+#        st_int = int (input("Digite um número inteiro: ")) 
+#        break 
+#    except ValueError:    
+#        print('Apenas números inteiros!')
+#    continue
 
-print(date_checker (day, month, year ))
-
-
-################ F U N F A N D O
-
+#
+##date =  input ('Digite digite a data no formato dd/mm/aaaa: ')
+#
+#date = '0/09/1991'
+#
+###IMPORTANTelements are equal math   x = x
+#day, month, year = date.split('/')
+#
+#day, month , year = int(day) , int(month) , int (year)                        
+#
 #def date_checker (day, month, year):
-#    day_checker = 1 <= day <= 31
+#
+#    def day_checker(day):
+#        if 1 <= day <= 31:
+#            return True
+#        return False
+#        #raise ValueError ('Dia inválido')
+#
+#    def month_checker(month):
+#        if  1 <= month <= 12:
+#            return True
+#        return False
+#        #raise ValueError ('Mês inválido')
 #    
-#    month_checker =  1 <= month <= 12
+#    def year_checker(year):
+#        if 1 <= year:
+#            return True
+#        return False
+#        #raise ValueError ('Ano inválido')
+#  
+#    
+#    if day_checker(day) and month_checker(month) and year_checker(year) == True:
+#        return('Data válida')
+#    elif day_checker(day) == False:
+#        return(f'Dia {day} inválida')
+#    elif month_checker(month) == False:
+#        return(f'Mês {month} inválido')
+#    elif year_checker(year) == False:
+#        return(f'Ano {year} inválido')
+#        
 #
-#    year_checker =  1 <= year 
-#
-#    if day_checker and month_checker and year_checker == True:
-#        return'Data válida'
-#    else:
-#        return 'Data inválida'
-#            
-#print(date_checker(day, month, year ))
-##date_checker (day_checker, month_checker, year_checker )
+#print(date_checker (day, month, year ))
 
-    #if year == 0:
-    #    return False
-    #if  1 > year:
-    #    #return f'{year} B.C.'
-    #    return True
-    #return f'{year} A.D.'
+
+
+
+
+
+
+
