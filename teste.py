@@ -123,15 +123,15 @@
 #print("O terceiro elevado ao cubo é {}".format(rd_calc))
 
 #########  
-i = float (input("Digite um número inteiro: "))
-
-def integer (i):
-    if i % 1 == 0:
-        return 'Inteiro'
-    else:
-        return 'Variável'
-
-print(integer(i))
+#i = float (input("Digite um número inteiro: "))
+#
+#def integer (i):
+#    if i % 1 == 0:
+#        return 'Inteiro'
+#    else:
+#        return 'Variável'
+#
+#print(integer(i))
 
 
 
@@ -1105,7 +1105,7 @@ print(integer(i))
 #    continue
 
 #
-##date =  input ('Digite digite a data no formato dd/mm/aaaa: ')
+#date =  input ('Digite digite a data no formato dd/mm/aaaa: ')
 #
 #date = '0/09/1991'
 #
@@ -1148,6 +1148,14 @@ print(integer(i))
 #print(date_checker (day, month, year ))
 
 
+## 37 Faça um Programa que leia um número inteiro maior que 0 e menor que 1000 e
+#imprima a quantidade de centenas, dezenas e unidades do mesmo.
+#Observando os termos no plural a colocação do "e", da vírgula entre outros.
+#Exemplo:
+#326 = 3 centenas, 2 dezenas e 6 unidades
+#12 = 1 dezena e 2 unidades
+
+num_int =  int (input ('Digite digite a data no formato dd/mm/aaaa: '))
 
 
 
