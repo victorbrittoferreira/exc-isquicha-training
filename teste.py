@@ -1174,12 +1174,20 @@ def decompositor ( limitador_num ):
     dr = cr % 10
     
     u = dr
-    if num_int.len >= 3:
-        return f'{c} Centena(s), {d} dezena(s) e {u} unidade(s)'
-    elif num_int.len >= 2:
-        return f'{d} dezena(s) e {u} unidade(s)'
+    
+    
+    num_len = len(str(num_int))
+
+
+    if num_len >= 3:
+        return ( f'{c} Centena(s), {d} dezena(s) e {u} unidade(s)')
+    elif num_len >= 2:
+        return ( f'{d} Dezena(s) e {u} unidade(s)')
     else:    
-        return f'{u} unidade(s)'
+        return ( f'{u} Unidade(s)')
+    
+    
+    
     
     
     #print(c)
