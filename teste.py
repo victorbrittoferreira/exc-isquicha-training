@@ -1157,46 +1157,47 @@
 
 #num_int =  int (input ('Digite um número inteiro até 1000: '))
 
-num_int = 980
+num_int = 1001
 
 def limitador_num ( num_int):
-    if 0 <= num_int <= 1000:
-        return num_int
-    return False
-    
-def decompositor ( limitador_num ):
-    
+    if not 0 <= num_int <= 1000:
+        return 'Número superior ao permitido'
+     
     c = num_int // 100
     cr = num_int % 100
-        
-   
+       
     d = cr // 10
     dr = cr % 10
     
     u = dr
     
+    decomp_num = (len(str(num_int)))
     
-    num_len = len(str(num_int))
-
-
-    if num_len >= 3:
+    if decomp_num >= 3:
         return ( f'{c} Centena(s), {d} dezena(s) e {u} unidade(s)')
-    elif num_len >= 2:
+    elif decomp_num >= 2:
         return ( f'{d} Dezena(s) e {u} unidade(s)')
     else:    
         return ( f'{u} Unidade(s)')
     
-    
-    
-    
-    
-    #print(c)
-    #print(cr)
 
-print(decompositor(limitador_num))
-print(limitador_num(num_int))
+print(f'{num_int} = {limitador_num(num_int)}')
 
 
+## 38 Faça um Programa para um caixa eletrônico.
+#O programa deverá perguntar ao usuário a valor do saque e depois informar
+#quantas notas de cada valor serão fornecidas.
+#As notas disponíveis serão as de 1, 5, 10, 50 e 100 reais.
+#O valor mínimo é de 10 reais e o máximo de 600 reais.
+#O programa não deve se preocupar com a quantidade de notas existentes na
+#máquina.
+#Exemplo 1:
+#Para sacar a quantia de 256 reais, o programa fornece duas notas de 100,
+#uma nota de 50, uma nota de 5 e uma nota de 1;
+#Exemplo 2:
+#Para sacar a quantia de 399 reais, o programa fornece três notas de 100,
+#uma nota de 50, quatro notas de 10, uma nota de 5 e quatro notas de 1.
+#"""
 
 
 
