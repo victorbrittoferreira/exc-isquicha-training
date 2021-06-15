@@ -1155,7 +1155,40 @@
 #326 = 3 centenas, 2 dezenas e 6 unidades
 #12 = 1 dezena e 2 unidades
 
-num_int =  int (input ('Digite digite a data no formato dd/mm/aaaa: '))
+#num_int =  int (input ('Digite um número inteiro até 1000: '))
+
+num_int = 980
+
+def limitador_num ( num_int):
+    if 0 <= num_int <= 1000:
+        return num_int
+    return False
+    
+def decompositor ( limitador_num ):
+    
+    c = num_int // 100
+    cr = num_int % 100
+        
+   
+    d = cr // 10
+    dr = cr % 10
+    
+    u = dr
+    if num_int.len >= 3:
+        return f'{c} Centena(s), {d} dezena(s) e {u} unidade(s)'
+    elif num_int.len >= 2:
+        return f'{d} dezena(s) e {u} unidade(s)'
+    else:    
+        return f'{u} unidade(s)'
+    
+    
+    #print(c)
+    #print(cr)
+
+print(decompositor(limitador_num))
+print(limitador_num(num_int))
+
+
 
 
 
