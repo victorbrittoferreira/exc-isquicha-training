@@ -1157,31 +1157,31 @@
 
 #num_int =  int (input ('Digite um número inteiro até 1000: '))
 
-num_int = 1001
-
-def limitador_num ( num_int):
-    if not 0 <= num_int <= 1000:
-        return 'Número superior ao permitido'
-     
-    c = num_int // 100
-    cr = num_int % 100
-       
-    d = cr // 10
-    dr = cr % 10
-    
-    u = dr
-    
-    decomp_num = (len(str(num_int)))
-    
-    if decomp_num >= 3:
-        return ( f'{c} Centena(s), {d} dezena(s) e {u} unidade(s)')
-    elif decomp_num >= 2:
-        return ( f'{d} Dezena(s) e {u} unidade(s)')
-    else:    
-        return ( f'{u} Unidade(s)')
-    
-
-print(f'{num_int} = {limitador_num(num_int)}')
+##num_int = 1001
+#
+#def limitador_num ( num_int):
+#    if not 0 <= num_int <= 1000:
+#        return 'Número superior ao permitido'
+#     
+#    c = num_int // 100
+#    cr = num_int % 100
+#       
+#    d = cr // 10
+#    dr = cr % 10
+#    
+#    u = dr
+#    
+#    decomp_num = (len(str(num_int)))
+#    
+#    if decomp_num >= 3:
+#        return ( f'{c} Centena(s), {d} dezena(s) e {u} unidade(s)')
+#    elif decomp_num >= 2:
+#        return ( f'{d} Dezena(s) e {u} unidade(s)')
+#    else:    
+#        return ( f'{u} Unidade(s)')
+#    
+#
+#print(f'{num_int} = {limitador_num(num_int)}')
 
 
 ## 38 Faça um Programa para um caixa eletrônico.
@@ -1197,10 +1197,55 @@ print(f'{num_int} = {limitador_num(num_int)}')
 #Exemplo 2:
 #Para sacar a quantia de 399 reais, o programa fornece três notas de 100,
 #uma nota de 50, quatro notas de 10, uma nota de 5 e quatro notas de 1.
-#"""
 
 
+saque = 1
 
+#x = [1,5,6,10,11,15,16,50,51,55,56,60,61,65,66,100,101,105,106,110,111,115,116,150,151,155,156,160,161,165,166]
+#print(len(x))
+
+um = 1
+cinco = 5
+dez = 10
+cinquenta = 50
+cem =  100
+
+def sacavel (saque):
+    
+    if 10 >= saque >= 600:
+        return 'Valor superior ao limite sacável'
+    
+    cem = saque // 100
+    cem_resto = saque % 100
+    
+    cinquenta =  cem_resto // 50
+    cinquenta_resto = cem_resto % 50
+    
+    dez = cinquenta_resto // 10
+    dez_resto = cinquenta_resto % 10
+
+    cinco = dez_resto // 5
+    cinco_resto = dez_resto % 5   
+    
+    um = cinco_resto // 1
+    
+    decomp_saque = (len(str(saque)))
+    
+    if decomp_saque >= 3:
+        return ( f'R$ {saque} = Notas sacadas: {cem} de cem, {cinquenta} de cinquenta, {dez} de dez, {cinco} de cinco e {um} de um.')
+    if decomp_saque >= 2:
+        return ( f'R$ {saque} = Notas sacadas: {cinquenta} de cinquenta, {dez} de dez, {cinco} de cinco e {um} de um.')
+    if decomp_saque >= 2 and decomp_saque < cinquenta:    
+        return ( f'R$ {saque} = Notas sacadas:{dez} de dez, {cinco} de cinco e {um} Unidade(s)')
+    if decomp_saque <= 1 and decomp_saque < dez: 
+        return (f'R$ {saque} = Notas sacadas: {cinco} de cinco e {um} de um.')
+    if decomp_saque <= 1 and decomp_saque >= cinco:
+        return (f'R$ {saque} = Notas sacadas: {cinco} de cinco e {um} de um.')
+    else:
+        return (f'R$ {saque} = Notas sacadas: {um} de um.')
+print('')    
+print(sacavel(saque))
+print('')
 
 
 
