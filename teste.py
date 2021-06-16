@@ -1199,53 +1199,42 @@
 #uma nota de 50, quatro notas de 10, uma nota de 5 e quatro notas de 1.
 
 
-saque = 1
 
-#x = [1,5,6,10,11,15,16,50,51,55,56,60,61,65,66,100,101,105,106,110,111,115,116,150,151,155,156,160,161,165,166]
-#print(len(x))
 
-um = 1
-cinco = 5
-dez = 10
-cinquenta = 50
-cem =  100
+x = [1,5,6,10,11,15,16,50,51,55,56,60,61,65,66,100,101,105,106,110,111,115,116,150,151,155,156,160,161,165,166]
+#x = [1 ; 600]
+#saque = int (input('Digite o valor a ser sacado entre R$ 10 ~ 600: '))
+for z, saque in enumerate (x):
+    z += 1
 
-def sacavel (saque):
-    
-    if 10 >= saque >= 600:
-        return 'Valor superior ao limite sacável'
-    
-    cem = saque // 100
-    cem_resto = saque % 100
-    
-    cinquenta =  cem_resto // 50
-    cinquenta_resto = cem_resto % 50
-    
-    dez = cinquenta_resto // 10
-    dez_resto = cinquenta_resto % 10
+    def sacavel (saque):
+        if not 10 <= saque <= 600:
+            return f'{saque} Valor diferente ao limite sacável: R$ 10 ~ 600'
 
-    cinco = dez_resto // 5
-    cinco_resto = dez_resto % 5   
+        cem = saque // 100
+        cem_resto = saque % 100
+        cinquenta =  cem_resto // 50
+        cinquenta_resto = cem_resto % 50
+        dez = cinquenta_resto // 10
+        dez_resto = cinquenta_resto % 10
+        cinco = dez_resto // 5
+        cinco_resto = dez_resto % 5   
+        um = cinco_resto // 1
+
+        decomp_saque = (len(str(saque)))
+
+        if decomp_saque == 3:
+            return f'R$ {saque} = Notas sacadas: {cem} de cem, {cinquenta} de cinquenta, {dez} de dez, {cinco} de cinco e {um} de um.'
+        elif decomp_saque == 2:
+            return f'R$ {saque} = Notas sacadas: {cinquenta} de cinquenta, {dez} de dez, {cinco} de cinco e {um} de um.'
+        elif decomp_saque == 2 and decomp_saque < cinquenta:    
+            return f'R$ {saque} = Notas sacadas:{dez} de dez, {cinco} de cinco e {um} Unidade(s)'
     
-    um = cinco_resto // 1
-    
-    decomp_saque = (len(str(saque)))
-    
-    if decomp_saque >= 3:
-        return ( f'R$ {saque} = Notas sacadas: {cem} de cem, {cinquenta} de cinquenta, {dez} de dez, {cinco} de cinco e {um} de um.')
-    if decomp_saque >= 2:
-        return ( f'R$ {saque} = Notas sacadas: {cinquenta} de cinquenta, {dez} de dez, {cinco} de cinco e {um} de um.')
-    if decomp_saque >= 2 and decomp_saque < cinquenta:    
-        return ( f'R$ {saque} = Notas sacadas:{dez} de dez, {cinco} de cinco e {um} Unidade(s)')
-    if decomp_saque <= 1 and decomp_saque < dez: 
-        return (f'R$ {saque} = Notas sacadas: {cinco} de cinco e {um} de um.')
-    if decomp_saque <= 1 and decomp_saque >= cinco:
-        return (f'R$ {saque} = Notas sacadas: {cinco} de cinco e {um} de um.')
-    else:
-        return (f'R$ {saque} = Notas sacadas: {um} de um.')
-print('')    
-print(sacavel(saque))
-print('')
+        
+    #print('')    
+    #print(sa4cavel(saque))
+    print(z,'º',f'Tentativa - {sacavel(saque)}')
+    #print('')
 
 
 
