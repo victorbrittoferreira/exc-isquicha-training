@@ -1200,38 +1200,51 @@
 
 #x = [1,5,6,10,11,15,16,50,51,55,56,60,61,65,66,100,101,105,106,110,111,115,116,150,151,155,156,160,161,165,166]
 
-saque = int (input('Digite o valor a ser sacado entre R$ 10 ~ 600: '))
-#for z, saque in enumerate (x):
-#    z += 1
+#saque = int (input('Digite o valor a ser sacado entre R$ 10 ~ 600: '))
+##for z, saque in enumerate (x):
+##    z += 1
+#
+#    def sacavel (saque):
+#        if not 10 <= saque <= 600:
+#            return f'{saque} Valor diferente ao limite sacável: R$ 10 ~ 600'
+#
+#        cem = saque // 100
+#        cem_resto = saque % 100
+#        cinquenta =  cem_resto // 50
+#        cinquenta_resto = cem_resto % 50
+#        dez = cinquenta_resto // 10
+#        dez_resto = cinquenta_resto % 10
+#        cinco = dez_resto // 5
+#        cinco_resto = dez_resto % 5   
+#        um = cinco_resto // 1
+#
+#        decomp_saque = (len(str(saque)))
+#
+#        if decomp_saque == 3:
+#            return f'R$ {saque} = Notas sacadas: {cem} de cem, {cinquenta} de cinquenta, {dez} de dez, {cinco} de cinco e {um} de um.'
+#        elif decomp_saque == 2:
+#            return f'R$ {saque} = Notas sacadas: {cinquenta} de cinquenta, {dez} de dez, {cinco} de cinco e {um} de um.'
+#        elif decomp_saque == 2 and decomp_saque < cinquenta:    
+#            return f'R$ {saque} = Notas sacadas:{dez} de dez, {cinco} de cinco e {um} Unidade(s)'
+#    
+#        
+#    print('')    
+#    print(sacavel(saque))
+#    print(z,'º',f'Tentativa - {sacavel(saque)}')
+#    print('')
 
-    def sacavel (saque):
-        if not 10 <= saque <= 600:
-            return f'{saque} Valor diferente ao limite sacável: R$ 10 ~ 600'
 
-        cem = saque // 100
-        cem_resto = saque % 100
-        cinquenta =  cem_resto // 50
-        cinquenta_resto = cem_resto % 50
-        dez = cinquenta_resto // 10
-        dez_resto = cinquenta_resto % 10
-        cinco = dez_resto // 5
-        cinco_resto = dez_resto % 5   
-        um = cinco_resto // 1
+## 39 Faça um Programa que peça um número inteiro e determine se ele é par ou impar. Dica: utilize o operador módulo 
 
-        decomp_saque = (len(str(saque)))
+#numb_int = int (input('Digite o valor a ser sacado entre R$ 10 ~ 600: '))
 
-        if decomp_saque == 3:
-            return f'R$ {saque} = Notas sacadas: {cem} de cem, {cinquenta} de cinquenta, {dez} de dez, {cinco} de cinco e {um} de um.'
-        elif decomp_saque == 2:
-            return f'R$ {saque} = Notas sacadas: {cinquenta} de cinquenta, {dez} de dez, {cinco} de cinco e {um} de um.'
-        elif decomp_saque == 2 and decomp_saque < cinquenta:    
-            return f'R$ {saque} = Notas sacadas:{dez} de dez, {cinco} de cinco e {um} Unidade(s)'
-    
+numb_int = 583
+
+def num_par_imp (numb_int):
+
+    if numb_int % 2 == 0:
+        return f'{numb_int} é PAR!'
+    else:
+        return f'{numb_int} é IMPAR!'
         
-    #print('')    
-    #print(sacavel(saque))
-    #print(z,'º',f'Tentativa - {sacavel(saque)}')
-    #print('')
-
-
-
+print(num_par_imp(numb_int))
