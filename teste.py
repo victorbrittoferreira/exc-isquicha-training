@@ -1198,14 +1198,11 @@
 #Para sacar a quantia de 399 reais, o programa fornece três notas de 100,
 #uma nota de 50, quatro notas de 10, uma nota de 5 e quatro notas de 1.
 
+#x = [1,5,6,10,11,15,16,50,51,55,56,60,61,65,66,100,101,105,106,110,111,115,116,150,151,155,156,160,161,165,166]
 
-
-
-x = [1,5,6,10,11,15,16,50,51,55,56,60,61,65,66,100,101,105,106,110,111,115,116,150,151,155,156,160,161,165,166]
-#x = [1 ; 600]
-#saque = int (input('Digite o valor a ser sacado entre R$ 10 ~ 600: '))
-for z, saque in enumerate (x):
-    z += 1
+saque = int (input('Digite o valor a ser sacado entre R$ 10 ~ 600: '))
+#for z, saque in enumerate (x):
+#    z += 1
 
     def sacavel (saque):
         if not 10 <= saque <= 600:
@@ -1232,8 +1229,8 @@ for z, saque in enumerate (x):
     
         
     #print('')    
-    #print(sa4cavel(saque))
-    print(z,'º',f'Tentativa - {sacavel(saque)}')
+    #print(sacavel(saque))
+    #print(z,'º',f'Tentativa - {sacavel(saque)}')
     #print('')
 
 
