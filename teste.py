@@ -1234,17 +1234,34 @@
 #    print('')
 
 
-## 39 Faça um Programa que peça um número inteiro e determine se ele é par ou impar. Dica: utilize o operador módulo 
+## 39 Faça um Programa que peça um número inteiro e determine se ele é par ou impar
 
-#numb_int = int (input('Digite o valor a ser sacado entre R$ 10 ~ 600: '))
+#numb_int = int (input('Digite um número inteiro: '))
 
-numb_int = 583
+#numb_int = 583
+#
+#def num_par_imp (numb_int):
+#
+#    if numb_int % 2 == 0:
+#        return f'{numb_int} é PAR!'
+#    else:
+#        return f'{numb_int} é IMPAR!'
+#        
+#print(num_par_imp(numb_int))
 
-def num_par_imp (numb_int):
 
-    if numb_int % 2 == 0:
-        return f'{numb_int} é PAR!'
-    else:
-        return f'{numb_int} é IMPAR!'
-        
-print(num_par_imp(numb_int))
+## 40 Faça um Programa que peça um número e informe se o número é inteiro ou decimal.
+
+#numb = int (input('Digite um número : '))
+
+#numb = 583.2
+#
+#def num_int_dec (numb):
+#
+#    if numb % 1 == 0:
+#        return f'{numb} é INTEIRO!'
+#    else:
+#        return f'{numb} é É DECIMAL!'
+#        
+#print(num_int_dec(numb))
+
