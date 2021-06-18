@@ -1271,32 +1271,58 @@
 #O resultado da operação deve ser acompanhado de uma frase que diga se o número é: 
 #    par ou ímpar; positivo ou negativo; inteiro ou decimal.
 
-#numb = int (input('Digite um número : '))
+#numb_1 = int (input('Digite um número : '))
+#numb_2 = int (input('Digite outro número : '))
+numb_1 = 1
+numb_2 = 2
 
-numb = 583.2
+operation = str (input(
+    'Qual operação matemática deseja realizar?\n'
+        '1 = SOMA, 2 = SUBTRACAO, 3 = MULTIPLICACAO, 4 = DIVISÃO '))
 
-def num_int_dec (numb):
+operation = 
 
-    if numb % 1 == 0:
-        return f'é inteiro'
-    else:
-        return f'é decimal'
+numb_oprd = 0
 
-def num_par_imp (numb):
-
-    if numb % 2 == 0:
-        return f'é par'
-    else:
-        return f'é impar'
+def numb_opring (numb_oprd):
+    if operation == '1':
+        return numb_1 + numb_2
+    elif operation == '2':
+        return numb_1 - numb_2
+    elif operation == '3':
+        return numb_1 * numb_2
+    elif operation == '4':
+        return numb_1 / numb_2
     
-def num_posi_nega (numb):
-    if numb < 0:
-        return f' é negativo'
-    elif numb > 0:
-        return f'é positvo'
-    else:
-        return f' é neutro'
-    
-    
-print(f'O número "{numb}" {num_int_dec(numb)}, {num_par_imp(numb)}, {num_posi_nega(numb)}')
+        
+        
+        
+        
+print (numb_opring( numb_oprd ))
+# numb_oprd = 583.2
+
+#def num_int_dec (numb_oprd):
+#
+#    if numb_oprd % 1 == 0:
+#        return f'é inteiro'
+#    else:
+#        return f'é decimal'
+#
+#def num_par_imp (numb_oprd):
+#
+#    if numb_oprd % 2 == 0:
+#        return f'é par'
+#    else:
+#        return f'é impar'
+#    
+#def num_posi_nega (numb_oprd):
+#    if numb_oprd < 0:
+#        return f' é negativo'
+#    elif numb_oprd > 0:
+#        return f'é positvo'
+#    else:
+#        return f' é neutro'
+#    
+#    
+#print(f'O número "{numb_oprd}" {num_int_dec(numb_oprd)}, {num_par_imp(numb_oprd)}, {num_posi_nega(numb_oprd)}')
     
