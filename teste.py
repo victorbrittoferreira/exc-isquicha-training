@@ -392,11 +392,11 @@
 #
 ###### CUSTO TOTAL MISTO
 #custo_total_misto_lg = ((lat_int_area * custo_lata) + (resto_galeado * custo_galao ))
-#
-#
-######################### OUTPUT ###############################
-#
-#
+##
+##
+########################## OUTPUT ###############################
+##
+##
 ###### DIVISAO IMPERFEITA DE AREA TOTAL  >= LATA(S) INTEIRA(S) + SOBRA DE AREA > SEM VANTAGEM A USAR GALAO(OES
 #if latas_float > 1 and ( resto_galeavel > razao_custo_equilib_g_x_l or area_apintar % capacidade_lata == 0 ):
 #    print(f'Será(ão) necessária(as) {latas_int} lata(s) e custará {custo_total_latas:.2f} R$')
@@ -405,7 +405,7 @@
 #    print('')
 #
 ###### DIVISAO IMPERFEITA DE AREA TOTAL  >= LATA(S) INTEIRA(S) + SOBRA DE AREA <= A VANTAGEM A USAR GALAO(OES)
-#elif latas_'float > 1 and resto_galeavel <= razao_custo_equilib_g_x_l:
+#elif latas_float > 1 and resto_galeavel <= razao_custo_equilib_g_x_l:
 #    print (f'O custo total do uso misto de {lat_int_area} lata(s) e {resto_galeado} galão(ões), custará R$ {custo_total_misto_lg:.2f}')
 #    print('')
 #    print(f'Só usando {galoes_int} galao(oes), o custo total será de R$ {custo_total_galoes}')
@@ -1050,11 +1050,11 @@
 #        print(f'O ano {ano} é bissexto')
 #    else:
 #        print(f'O ano {ano} não é bissexto')
-#        
-#        
+        
+        
 #ano_bissexto(ano)
-#
-#
+
+
 #def dias_mes(ano, mes):
 # #   """Return number of days in that month in that year."""
 #    if not 1 <= dias_meses <= 12:
@@ -1064,10 +1064,10 @@
 #        return 29
 #
 #    return dias_meses[month]
-
-#def days_in_year(days. month):
+#
+#def days_in_year(days, month):
 #   return (month_days)
-
+#
 #print(f'O mês {days_in_month(year, month)} dias do ano de {(is_leap(year))}')
 #print (days_in_month(2020, 9))
 #print (ano_bissexto(2020))
@@ -1265,3 +1265,38 @@
 #        
 #print(num_int_dec(numb))
 
+
+## 41 Faça um Programa que leia 2 números e em seguida pergunte ao usuário qual operação ele deseja realizar.
+
+#O resultado da operação deve ser acompanhado de uma frase que diga se o número é: 
+#    par ou ímpar; positivo ou negativo; inteiro ou decimal.
+
+#numb = int (input('Digite um número : '))
+
+numb = 583.2
+
+def num_int_dec (numb):
+
+    if numb % 1 == 0:
+        return f'é inteiro'
+    else:
+        return f'é decimal'
+
+def num_par_imp (numb):
+
+    if numb % 2 == 0:
+        return f'é par'
+    else:
+        return f'é impar'
+    
+def num_posi_nega (numb):
+    if numb < 0:
+        return f' é negativo'
+    elif numb > 0:
+        return f'é positvo'
+    else:
+        return f' é neutro'
+    
+    
+print(f'O número "{numb}" {num_int_dec(numb)}, {num_par_imp(numb)}, {num_posi_nega(numb)}')
+    
