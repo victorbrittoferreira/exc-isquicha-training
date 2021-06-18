@@ -1273,18 +1273,19 @@
 
 #numb_1 = int (input('Digite um número : '))
 #numb_2 = int (input('Digite outro número : '))
-numb_1 = 1
-numb_2 = 2
+numb_1 = 2
+numb_2 = 3
 
-operation = str (input(
-    'Qual operação matemática deseja realizar?\n'
-        '1 = SOMA, 2 = SUBTRACAO, 3 = MULTIPLICACAO, 4 = DIVISÃO '))
+#operation = str (input(
+#    'Qual operação matemática deseja realizar?\n'
+#        '   1 = SOMA, 2 = SUBTRACAO, 3 = MULTIPLICACAO\n'
+#        '   4 = DIVISÃO , 5 = EXPONECIAL: '))
 
-operation = 
+operation = '4'
 
-numb_oprd = 0
 
-def numb_opring (numb_oprd):
+
+def numb_opring (operation):
     if operation == '1':
         return numb_1 + numb_2
     elif operation == '2':
@@ -1293,36 +1294,36 @@ def numb_opring (numb_oprd):
         return numb_1 * numb_2
     elif operation == '4':
         return numb_1 / numb_2
+    elif operation == '5':
+        return numb_1 ** numb_2
     
-        
-        
-        
-        
-print (numb_opring( numb_oprd ))
+
+print (numb_opring( operation ))
+#print (type(numb_opring( operation )))
 # numb_oprd = 583.2
 
-#def num_int_dec (numb_oprd):
-#
-#    if numb_oprd % 1 == 0:
-#        return f'é inteiro'
-#    else:
-#        return f'é decimal'
-#
-#def num_par_imp (numb_oprd):
-#
-#    if numb_oprd % 2 == 0:
-#        return f'é par'
-#    else:
-#        return f'é impar'
-#    
-#def num_posi_nega (numb_oprd):
-#    if numb_oprd < 0:
-#        return f' é negativo'
-#    elif numb_oprd > 0:
-#        return f'é positvo'
-#    else:
-#        return f' é neutro'
-#    
-#    
-#print(f'O número "{numb_oprd}" {num_int_dec(numb_oprd)}, {num_par_imp(numb_oprd)}, {num_posi_nega(numb_oprd)}')
+
+def num_par_imp (operation):
+    if numb_opring(operation) % 2 == 0:
+        return 'é par'
+    else:
+        return 'é impar'
+
+def num_posi_nega (operation):
+    if numb_opring( operation) < 0:
+        return ' é negativo'
+    elif numb_opring( operation) > 0:
+        return 'é positvo'
+    else:
+        return ' é neutro'
+   
+def num_int_dec (operation):
+    if numb_opring( operation) % 1 == 0:
+        return f'O número "{numb_opring(operation)}" é inteiro, {num_par_imp(operation)}, {num_posi_nega(operation)}'
+    else:
+        return f'O número "{numb_opring(operation):.2f}" é decimal, {num_par_imp(operation)}, {num_posi_nega(operation)}'
+#print(num_int_dec(operation))
+
+   
+print(f'{num_int_dec(operation)}')
     
