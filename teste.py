@@ -1273,51 +1273,84 @@
 
 #numb_1 = int (input('Digite um número : '))
 #numb_2 = int (input('Digite outro número : '))
-numb_1 = 2
-numb_2 = 2
-
+#
 #operation = str (input(
 #    'Qual operação matemática deseja realizar?\n'
 #        '   1 = SOMA, 2 = SUBTRACAO, 3 = MULTIPLICACAO\n'
 #        '   4 = DIVISÃO , 5 = EXPONECIAL: '))
+#
+#
+#def numb_opring (operation):
+#    if operation == '1':
+#        return numb_1 + numb_2
+#    elif operation == '2':
+#        return numb_1 - numb_2
+#    elif operation == '3':
+#        return numb_1 * numb_2
+#    elif operation == '4':
+#        return numb_1 / numb_2
+#    elif operation == '5':
+#        return numb_1 ** numb_2
+#   
+#def num_par_imp (operation):
+#    if numb_opring(operation) % 2 == 0:
+#        return 'par'
+#    else:
+#        return 'impar'
+#
+#def num_posit_nega (operation):
+#    if numb_opring( operation) < 0:
+#        return 'negativo'
+#    elif numb_opring( operation) > 0:
+#        return 'positvo'
+#    else:
+#        return 'neutro'
+#   
+#def num_int_dec (operation):
+#    if numb_opring( operation) % 1 == 0:
+#        return (f'O número "{numb_opring(operation)}" é inteiro,'
+#                f' {num_par_imp(operation)}, {num_posit_nega(operation)}')
+#    else:
+#        return (f'O número "{numb_opring(operation):.2f}" é decimal,'
+#                f' {num_par_imp(operation)}, {num_posit_nega(operation)}')
+#
+#
+#print('')
+#print(f'{num_int_dec(operation)}')
 
-operation = '2'
 
-def numb_opring (operation):
-    if operation == '1':
-        return numb_1 + numb_2
-    elif operation == '2':
-        return numb_1 - numb_2
-    elif operation == '3':
-        return numb_1 * numb_2
-    elif operation == '4':
-        return numb_1 / numb_2
-    elif operation == '5':
-        return numb_1 ** numb_2
-   
-def num_par_imp (operation):
-    if numb_opring(operation) % 2 == 0:
-        return 'par'
-    else:
-        return 'impar'
+## 42  Faça um programa que faça 5 perguntas para uma pessoa sobre um crime. As perguntas são: 
 
-def num_posit_nega (operation):
-    if numb_opring( operation) < 0:
-        return 'negativo'
-    elif numb_opring( operation) > 0:
-        return 'positvo'
-    else:
-        return 'neutro'
-   
-def num_int_dec (operation):
-    if numb_opring( operation) % 1 == 0:
-        return (f'O número "{numb_opring(operation)}" é inteiro,'
-                f' {num_par_imp(operation)}, {num_posit_nega(operation)}')
-    else:
-        return (f'O número "{numb_opring(operation):.2f}" é decimal,'
-                f' {num_par_imp(operation)}, {num_posit_nega(operation)}')
+# "Telefonou para a vítima?"
+# "Esteve no local do crime?"
+# "Mora perto da vítima?"
+# "Devia para a vítima?"
+# "Já trabalhou com a vítima?"
 
+#O programa deve no final emitir uma classificação sobre a participação da pessoa no crime.
+#Se a pessoa responder positivamente a 2 questões ela deve ser classificada como "Suspeita",
+#entre 3 e 4 como "Cúmplice" e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente".
 
-print('')
-print(f'{num_int_dec(operation)}')
-    
+print('Responda S = SIM ou N = NÃO')
+
+grau_suspeita = []
+
+def acariacao(grau_suspeita):
+
+telefonou = input( "Telefonou para a vítima?")
+local = input( "Esteve no local do crime?")
+mora = input( "Mora perto da vítima?")
+divida = input( "Devia para a vítima?")
+trabalhou = input( "Já trabalhou com a vítima?")
+
+    if telefonou == "S":
+        return  
+    if local == "S":
+        return
+    if mora == "S":
+        return    
+    if divida == "S":
+        return
+    if trabalhou == "S":
+        return    
+
