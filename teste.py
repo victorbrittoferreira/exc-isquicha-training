@@ -1274,16 +1274,14 @@
 #numb_1 = int (input('Digite um número : '))
 #numb_2 = int (input('Digite outro número : '))
 numb_1 = 2
-numb_2 = 3
+numb_2 = 2
 
 #operation = str (input(
 #    'Qual operação matemática deseja realizar?\n'
 #        '   1 = SOMA, 2 = SUBTRACAO, 3 = MULTIPLICACAO\n'
 #        '   4 = DIVISÃO , 5 = EXPONECIAL: '))
 
-operation = '4'
-
-
+operation = '2'
 
 def numb_opring (operation):
     if operation == '1':
@@ -1296,34 +1294,30 @@ def numb_opring (operation):
         return numb_1 / numb_2
     elif operation == '5':
         return numb_1 ** numb_2
-    
-
-print (numb_opring( operation ))
-#print (type(numb_opring( operation )))
-# numb_oprd = 583.2
-
-
+   
 def num_par_imp (operation):
     if numb_opring(operation) % 2 == 0:
-        return 'é par'
+        return 'par'
     else:
-        return 'é impar'
+        return 'impar'
 
-def num_posi_nega (operation):
+def num_posit_nega (operation):
     if numb_opring( operation) < 0:
-        return ' é negativo'
+        return 'negativo'
     elif numb_opring( operation) > 0:
-        return 'é positvo'
+        return 'positvo'
     else:
-        return ' é neutro'
+        return 'neutro'
    
 def num_int_dec (operation):
     if numb_opring( operation) % 1 == 0:
-        return f'O número "{numb_opring(operation)}" é inteiro, {num_par_imp(operation)}, {num_posi_nega(operation)}'
+        return (f'O número "{numb_opring(operation)}" é inteiro,'
+                f' {num_par_imp(operation)}, {num_posit_nega(operation)}')
     else:
-        return f'O número "{numb_opring(operation):.2f}" é decimal, {num_par_imp(operation)}, {num_posi_nega(operation)}'
-#print(num_int_dec(operation))
+        return (f'O número "{numb_opring(operation):.2f}" é decimal,'
+                f' {num_par_imp(operation)}, {num_posit_nega(operation)}')
 
-   
+
+print('')
 print(f'{num_int_dec(operation)}')
     
