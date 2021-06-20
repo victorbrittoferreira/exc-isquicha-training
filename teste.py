@@ -1333,32 +1333,39 @@
 
 print('Responda S = SIM ou N = NÃO')
 
-grau_suspeita = 0
+######## PERGUNTAR
 
-telefonou = input( "Telefonou para a vítima? ")
-local = input( "Esteve no local do crime? ")
-mora = input( "Mora perto da vítima? ")
-divida = input( "Devia para a vítima? ")
-trabalhou = input( "Já trabalhou com a vítima? ")
+#telefonou = input( "Telefonou para a vítima? ")
+#local = input( "Esteve no local do crime? ")
+#mora = input( "Mora perto da vítima? ")
+#divida = input( "Devia para a vítima? ")
+#trabalhou = input( "Já trabalhou com a vítima? ")
 
-def acariacao(grau_suspeita):
+def 
 
-    grau = 0
+telefonou = 'S'
+local = 'S'
+mora = 'S'
+divida = 'S'
+trabalhou = 'S'
+print(trabalhou)
+
+
+
+
+grau_suspeita = (telefonou + local + mora + divida + trabalhou)
+print(grau_suspeita)
+
+######## CLASSIFICAR
+
+
+def grau_suspeita( indicio ):
     
-    for grau in grau_suspeita:
-    
-
-        if telefonou == "S":
-            grau += 1
-        if local == "S":
-            grau += 1
-        if mora == "S":
-            grau += 1    
-        if divida == "S":
-            grau += 1
-        if trabalhou == "S":
-            grau += 1
-        print(grau)
-            
-    print (acariacao(grau_suspeita))    
-print (acariacao(grau_suspeita))
+    if indicio == 0:
+        return ' Inocente'
+    if indicio <= 2:
+        return 'Suspeita'
+    if indicio <= 4:
+        return 'Cumplice'
+    else:
+        return 'Assissina'
