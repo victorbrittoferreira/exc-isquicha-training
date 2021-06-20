@@ -1333,24 +1333,32 @@
 
 print('Responda S = SIM ou N = NÃO')
 
-grau_suspeita = []
+grau_suspeita = 0
+
+telefonou = input( "Telefonou para a vítima? ")
+local = input( "Esteve no local do crime? ")
+mora = input( "Mora perto da vítima? ")
+divida = input( "Devia para a vítima? ")
+trabalhou = input( "Já trabalhou com a vítima? ")
 
 def acariacao(grau_suspeita):
 
-telefonou = input( "Telefonou para a vítima?")
-local = input( "Esteve no local do crime?")
-mora = input( "Mora perto da vítima?")
-divida = input( "Devia para a vítima?")
-trabalhou = input( "Já trabalhou com a vítima?")
+    grau = 0
+    
+    for grau in grau_suspeita:
+    
 
-    if telefonou == "S":
-        return  
-    if local == "S":
-        return
-    if mora == "S":
-        return    
-    if divida == "S":
-        return
-    if trabalhou == "S":
-        return    
-
+        if telefonou == "S":
+            grau += 1
+        if local == "S":
+            grau += 1
+        if mora == "S":
+            grau += 1    
+        if divida == "S":
+            grau += 1
+        if trabalhou == "S":
+            grau += 1
+        print(grau)
+            
+    print (acariacao(grau_suspeita))    
+print (acariacao(grau_suspeita))
