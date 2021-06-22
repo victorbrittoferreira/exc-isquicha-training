@@ -1348,12 +1348,9 @@ local = 'S'
 mora = 'S'
 divida = 'S'
 trabalhou = 'S'
-print(trabalhou)
 
-
-
-
-grau_suspeita = (telefonou + local + mora + divida + trabalhou)
+grau_suspeita = (telefonou , local , mora , divida , trabalhou)
+#print(list(grau_suspeita))
 print(grau_suspeita)
 
 ######## CLASSIFICAR
@@ -1361,13 +1358,14 @@ print(grau_suspeita)
 
 def grau_suspeita( indicio ):
     
-    if indicio == 0:
-        return ' Inocente'
-    if indicio <= 2:
-        return 'Suspeita'
-    if indicio <= 4:
-        return 'Cumplice'
-    else:
-        return 'Assissina'
+    for indicio in grau_suspeita:
+        
+        if indicio == 0:
+            return ' Inocente'
+        if indicio <= 2:
+            return 'Suspeita'
+        if indicio <= 4:
+            return 'Cumplice'
+        else:
+            return 'Assissina'
     
-    xs
