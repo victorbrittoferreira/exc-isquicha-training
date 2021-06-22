@@ -1349,23 +1349,28 @@ mora = 'S'
 divida = 'S'
 trabalhou = 'S'
 
-grau_suspeita = (telefonou , local , mora , divida , trabalhou)
-#print(list(grau_suspeita))
-print(grau_suspeita)
+respostas = (telefonou , local , mora , divida , trabalhou)
+#print(list(respostas))
+#print(respostas)
 
 ######## CLASSIFICAR
 
+#x = 
+#print(x)
+
+indicio =  respostas.count('S')
+print(indicio)
 
 def grau_suspeita( indicio ):
     
-    for indicio in grau_suspeita:
-        
-        if indicio == 0:
-            return ' Inocente'
-        if indicio <= 2:
-            return 'Suspeita'
-        if indicio <= 4:
-            return 'Cumplice'
-        else:
-            return 'Assissina'
     
+    if indicio == 0:
+        return ' Inocente'
+    if indicio <= 2:
+        return 'Suspeita'
+    if indicio <= 4:
+        return 'Cumplice'
+    else:
+        return 'Assissina'
+
+print(grau_suspeita(indicio))
