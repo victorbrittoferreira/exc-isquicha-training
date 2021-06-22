@@ -1341,7 +1341,7 @@ print('Responda S = SIM ou N = NÃO')
 #divida = input( "Devia para a vítima? ")
 #trabalhou = input( "Já trabalhou com a vítima? ")
 
-def 
+
 
 telefonou = 'S'
 local = 'S'
@@ -1369,3 +1369,5 @@ def grau_suspeita( indicio ):
         return 'Cumplice'
     else:
         return 'Assissina'
+    
+    xs
