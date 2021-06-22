@@ -1344,33 +1344,35 @@ print('Responda S = SIM ou N = NÃO')
 
 
 telefonou = 'S'
-local = 'S'
+local = 's'
 mora = 'S'
-divida = 'S'
+divida = 's'
 trabalhou = 'S'
 
-respostas = (telefonou , local , mora , divida , trabalhou)
+respostas = [telefonou , local , mora , divida , trabalhou]
 #print(list(respostas))
-#print(respostas)
+local.upper()
+print(local)
 
 ######## CLASSIFICAR
-
+#vowel_u = [v.upper() for v in vowel]
 #x = 
 #print(x)
 
-indicio =  respostas.count('S')
-print(indicio)
+#indicio = respostas.count('S')
+#indicio = 
+#print(indicio)
 
-def grau_suspeita( indicio ):
-    
-    
-    if indicio == 0:
-        return ' Inocente'
-    if indicio <= 2:
-        return 'Suspeita'
-    if indicio <= 4:
-        return 'Cumplice'
-    else:
-        return 'Assissina'
-
-print(grau_suspeita(indicio))
+#def grau_suspeita( indicio ):
+#    
+#    
+#    if indicio == 0:
+#        return ' Inocente'
+#    if indicio <= 2:
+#        return 'Suspeita'
+#    if indicio <= 4:
+#        return 'Cumplice'
+#    else:
+#        return 'Assissina'
+#
+#print(grau_suspeita(indicio))
