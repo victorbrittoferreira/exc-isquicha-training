@@ -1378,3 +1378,13 @@
 # (codificado da seguinte forma: A-álcool, G-gasolina), calcule
 # e imprima o valor a ser pago pelo cliente sabendo-se que o
 # preço do litro da gasolina é R$ 2,50 o preço do litro do álcool é R$ 1,90.
+
+a_preco = 2.5
+g_preco = 1.9 
+
+a_litros = 0 
+g_litros = 0 
+
+def venda_litros_a( a_litros ):
+
+def venda_litros_g ( g_litros ):
