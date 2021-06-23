@@ -1331,39 +1331,50 @@
 #Se a pessoa responder positivamente a 2 questões ela deve ser classificada como "Suspeita",
 #entre 3 e 4 como "Cúmplice" e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente".
 
-print('Responda S = SIM ou N = NÃO')
-
-######## PERGUNTAR
-
+#print('Responda S = SIM ou N = NÃO')
+#
+######### PERGUNTAR
+#
 #telefonou = input( "Telefonou para a vítima? ")
 #local = input( "Esteve no local do crime? ")
 #mora = input( "Mora perto da vítima? ")
 #divida = input( "Devia para a vítima? ")
 #trabalhou = input( "Já trabalhou com a vítima? ")
+#
+##telefonou = 'S'
+##local = 's'
+##mora = 'S'
+##divida = 's'
+##trabalhou = 'S'
+#
+#respostas = [telefonou , local , mora , divida , trabalhou]
+#respostas_u = [s.upper() for s in respostas]
+#
+######### CLASSIFICAR
+#
+#indicio = respostas_u.count('S')
+##print(indicio)
+#
+#def grau_suspeita( indicio ):
+#    
+#    if indicio == 0:
+#        return ' Inocente''
+#    if indicio <= 2:
+#        return 'Suspeita'
+#    if indicio <= 4:
+#        return 'Cumplice'
+#    else:
+#        return 'Assissina'
+#
+#print(grau_suspeita(indicio))
 
-telefonou = 'S'
-local = 's'
-mora = 'S'
-divida = 's'
-trabalhou = 'S'
 
-respostas = [telefonou , local , mora , divida , trabalhou]
-respostas_u = [s.upper() for s in respostas]
-
-######## CLASSIFICAR
-
-indicio = respostas_u.count('S')
-#print(indicio)
-
-def grau_suspeita( indicio ):
-    
-    if indicio == 0:
-        return ' Inocente''
-    if indicio <= 2:
-        return 'Suspeita'
-    if indicio <= 4:
-        return 'Cumplice'
-    else:
-        return 'Assissina'
-
-print(grau_suspeita(indicio))
+## 43 Um posto está vendendo combustíveis com a seguinte 
+# tabela de descontos: Álcool: até 20 litros, desconto de
+# 3% por litro acima de 20 litros, desconto de 5% por litro
+# Gasolina: até 20 litros, desconto de 4% por litro acima de 
+# 20 litros, desconto de 6% por litro Escreva um algoritmo que
+# leia o número de litros vendidos, o tipo de combustível
+# (codificado da seguinte forma: A-álcool, G-gasolina), calcule
+# e imprima o valor a ser pago pelo cliente sabendo-se que o
+# preço do litro da gasolina é R$ 2,50 o preço do litro do álcool é R$ 1,90.
