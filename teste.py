@@ -1350,7 +1350,6 @@ trabalhou = 'S'
 respostas = [telefonou , local , mora , divida , trabalhou]
 respostas_u = [s.upper() for s in respostas]
 
-
 ######## CLASSIFICAR
 
 indicio = respostas_u.count('S')
@@ -1359,7 +1358,7 @@ indicio = respostas_u.count('S')
 def grau_suspeita( indicio ):
     
     if indicio == 0:
-        return ' Inocente'
+        return ' Inocente''
     if indicio <= 2:
         return 'Suspeita'
     if indicio <= 4:
