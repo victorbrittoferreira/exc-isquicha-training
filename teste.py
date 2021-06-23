@@ -1379,12 +1379,28 @@
 # e imprima o valor a ser pago pelo cliente sabendo-se que o
 # preço do litro da gasolina é R$ 2,50 o preço do litro do álcool é R$ 1,90.
 
-a_preco = 2.5
-g_preco = 1.9 
-
 a_litros = 0 
 g_litros = 0 
+desc_3 = 3/100
+desc_5 = 5/100
+
+
+a_preco = 2.5
+g_preco = 1.9 
+desc_4 = 4/100
+desc_6 = 6/100
+
+
 
 def venda_litros_a( a_litros ):
+    
+        
+    valor_total_a = a_litros * a_preco
+
+    if a_litros <= 20:
+        return valor_total_a * desc_3
+    else:
+        return valor_total_a * desc_5
+
 
 def venda_litros_g ( g_litros ):
