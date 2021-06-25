@@ -1380,71 +1380,109 @@
 # preço do litro da gasolina é R$ 2,50 o preço do litro do álcool é R$ 1,90.
 
 
-tipo_combust = input (f' Digite G para gasolina ou A para alcool: ')
-
-if tipo_combust == 'G' or tipo_combust == 'g':
-    
-    g_litros = int ( input (f' Digite quantos litros deseja: '))
-    g_preco = 2.5 
-    desc_4 = 1 - (4/100)
-    desc_6 = 1 - (6/100)
-    
-    def venda_litros_g ( g_litros ):
-    
-        valor_total_g = g_litros * g_preco
-
-        if g_litros <= 20:
-            return valor_total_g * desc_4
-        else:
-            return valor_total_g * desc_6
-    
-    print (f'O valor total a ser pago para {g_litros} l é R$ {venda_litros_g(g_litros):.2f}')
-
-elif tipo_combust == 'A' or tipo_combust == 'a':
-    
-    a_litros = int ( input (f' Digite quantos litros deseja: '))
-    
-    desc_3 = 1 - (3/100)
-    desc_5 = 1 - (5/100)    
-    a_preco = 1.9
-    
-    def venda_litros_a( a_litros ):
-    
-        valor_total_a = a_litros * a_preco
-
-        if a_litros <= 20:
-            return valor_total_a * desc_3
-        else:
-            return valor_total_a * desc_5
-    
-    print (f'O valor total a ser pago para {a_litros} l é R$ {venda_litros_a(a_litros):.2f}')
+#tipo_combust = input (f' Digite G para gasolina ou A para alcool: ')
+#
+#if tipo_combust == 'G' or tipo_combust == 'g':
+#    
+#    g_litros = int ( input (f' Digite quantos litros deseja: '))
+#    g_preco = 2.5 
+#    desc_4 = 1 - (4/100)
+#    desc_6 = 1 - (6/100)
+#    
+#    def venda_litros_g ( g_litros ):
+#    
+#        valor_total_g = g_litros * g_preco
+#
+#        if g_litros <= 20:
+#            return valor_total_g * desc_4
+#        else:
+#            return valor_total_g * desc_6
+#    
+#    print (f'O valor total a ser pago para {g_litros} l é R$ {venda_litros_g(g_litros):.2f}')
+#
+#elif tipo_combust == 'A' or tipo_combust == 'a':
+#    
+#    a_litros = int ( input (f' Digite quantos litros deseja: '))
+#    
+#    desc_3 = 1 - (3/100)
+#    desc_5 = 1 - (5/100)    
+#    a_preco = 1.9
+#    
+#    def venda_litros_a( a_litros ):
+#    
+#        valor_total_a = a_litros * a_preco
+#
+#        if a_litros <= 20:
+#            return valor_total_a * desc_3
+#        else:
+#            return valor_total_a * desc_5
+#    
+#    print (f'O valor total a ser pago para {a_litros} l é R$ {venda_litros_a(a_litros):.2f}')
     
         
+## 44 Uma fruteira está vendendo frutas com a seguinte tabela de preços:
+#                      Até 5 Kg           Acima de 5 Kg
+#Morango         R$ 2,50 por Kg          R$ 2,20 por Kg
+#Maçã            R$ 1,80 por Kg          R$ 1,50 por Kg
+#Se o cliente comprar mais de 8 Kg em frutas ou o valor total da compra
+#ultrapassar R$ 25,00, receberá ainda um desconto de 10% sobre este total.
+#Escreva um algoritmo para ler a quantidade (em Kg) de morangos e a quantidade
+#(em Kg) de maças adquiridas e escreva o valor a ser pago pelo cliente.
+
+frutas = input ('Se apenas morangos, digite mr, se apenas maças, digte mc, se ambos digite mm: ')
 
 
+#def valor_frutas (*peso , frutas):
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#   if peso <= 5:
+#       morango = 2.5
+#       maca = 1.8
+#   elif frutas > 5:
+#       morango = 2.2
+#       maca = 1.5
+#   elif frutas > 8 or preço > 25: 
     
     
 
 
-print('-')
+if frutas == 'mm':
+    mr = float ( input (f' Digite quantos quilos de morango : '))
+    mc = float ( input (f' Digite quantos quilos de maca : '))
+    peso = mc + mr
 
+
+elif frutas == 'mr':
+    mr = float ( input (f' Digite quantos quilos deseja: '))
+    peso = mr
+    
+elif frutas == 'mc':
+    mc = float ( input (f' Digite quantos quilos deseja: '))
+    peso = mc
+
+
+def  
+
+if peso <= 5:
+
+    mrp = 2.5
+    mcp = 1.8
+    
+    preco = (mrp * mr) + ( mcp * mc)
+    print (preco)
+    
+elif 5 < peso <= 8:
+
+    mrp = 2.2
+    mcp = 1.5
+
+    preco = (mrp * mr) + ( mcp * mc)
+    print (preco)
+
+elif peso  > 8 or preco > 25:
+
+    mrp = 2.2
+    mcp = 1.5
+
+    preco = ((mrp * mr) + ( mcp * mc)) * 0.9
+    print (preco)
+    
