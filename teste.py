@@ -1429,7 +1429,7 @@
 #Escreva um algoritmo para ler a quantidade (em Kg) de morangos e a quantidade
 #(em Kg) de maças adquiridas e escreva o valor a ser pago pelo cliente.
 
-frutas = input ('Se apenas morangos, digite mr, se apenas maças, digte mc, se ambos digite mm: ')
+qual_fruta = input ('Se apenas morangos, digite mr, se apenas maças, digte mc, se ambos digite mm: ')
 
 
 #def valor_frutas (*peso , frutas):
@@ -1443,46 +1443,50 @@ frutas = input ('Se apenas morangos, digite mr, se apenas maças, digte mc, se a
 #   elif frutas > 8 or preço > 25: 
     
     
+def frutas (qual_fruta):
+
+    if qual_fruta == 'mm':
+        mr = float ( input (f' Digite quantos quilos de morango : '))
+        mc = float ( input (f' Digite quantos quilos de maca : '))
+        return peso = mc + mr
 
 
-if frutas == 'mm':
-    mr = float ( input (f' Digite quantos quilos de morango : '))
-    mc = float ( input (f' Digite quantos quilos de maca : '))
-    peso = mc + mr
+    elif qual_fruta == 'mr':
+        mr = float ( input (f' Digite quantos quilos deseja: '))
+        return peso = mr
+
+    elif qual_fruta == 'mc':
+        mc = float ( input (f' Digite quantos quilos deseja: '))
+        return peso = mc
 
 
-elif frutas == 'mr':
-    mr = float ( input (f' Digite quantos quilos deseja: '))
-    peso = mr
+def frutas_ps_pc (peso):
+
+    if peso <= 5:
+
+        mrp = 2.5
+        mcp = 1.8
+
+        preco = (mrp * mr) + ( mcp * mc)
+        print (preco)
+
+    elif 5 < peso <= 8:
+
+        mrp = 2.2
+        mcp = 1.5
+
+        preco = (mrp * mr) + ( mcp * mc)
+        print (preco)
+
+    elif peso  > 8 or preco > 25:
+
+        mrp = 2.2
+        mcp = 1.5
+
+        preco = ((mrp * mr) + ( mcp * mc)) * 0.9
+        print (preco)
     
-elif frutas == 'mc':
-    mc = float ( input (f' Digite quantos quilos deseja: '))
-    peso = mc
 
+print(frutas(qual_fruta))
 
-def  
-
-if peso <= 5:
-
-    mrp = 2.5
-    mcp = 1.8
-    
-    preco = (mrp * mr) + ( mcp * mc)
-    print (preco)
-    
-elif 5 < peso <= 8:
-
-    mrp = 2.2
-    mcp = 1.5
-
-    preco = (mrp * mr) + ( mcp * mc)
-    print (preco)
-
-elif peso  > 8 or preco > 25:
-
-    mrp = 2.2
-    mcp = 1.5
-
-    preco = ((mrp * mr) + ( mcp * mc)) * 0.9
-    print (preco)
-    
+print (frutas_ps_pc(peso))
