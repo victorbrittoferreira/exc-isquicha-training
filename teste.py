@@ -1429,8 +1429,8 @@
 #Escreva um algoritmo para ler a quantidade (em Kg) de morangos e a quantidade
 #(em Kg) de maças adquiridas e escreva o valor a ser pago pelo cliente.
 
-qual_fruta = input ('Se apenas morangos, digite mr, se apenas maças, digte mc, se ambos digite mm: ')
-
+#qual_fruta = input ('Se apenas morangos, digite mr, se apenas maças, digte mc, se ambos digite mm: ')
+qual_fruta = 'mr'
 
 #def valor_frutas (*peso , frutas):
 
@@ -1441,52 +1441,50 @@ qual_fruta = input ('Se apenas morangos, digite mr, se apenas maças, digte mc, 
 #       morango = 2.2
 #       maca = 1.5
 #   elif frutas > 8 or preço > 25: 
+  
+peso = 8
+preco = 25.1
     
+mr = 8
+mc = 0
+
     
-def frutas (qual_fruta):
+#def frutas (qual_fruta , preco):
+#
+#    
+#    if qual_fruta == 'mm':
+#        mr = float ( input (f' Digite quantos quilos de morango : '))
+#        mc = float ( input (f' Digite quantos quilos de maca : '))
+#        peso = mc + mr
+#        return peso
+#
+#    elif qual_fruta == 'mr':
+#        mr = float ( input (f' Digite quantos quilos deseja: '))
+#        peso = mr
+#        return peso
+#
+#    elif qual_fruta == 'mc':
+#        mc = float ( input (f' Digite quantos quilos deseja: '))
+#        peso = mc
+#        return peso
 
-    if qual_fruta == 'mm':
-        mr = float ( input (f' Digite quantos quilos de morango : '))
-        mc = float ( input (f' Digite quantos quilos de maca : '))
-        return peso = mc + mr
-
-
-    elif qual_fruta == 'mr':
-        mr = float ( input (f' Digite quantos quilos deseja: '))
-        return peso = mr
-
-    elif qual_fruta == 'mc':
-        mc = float ( input (f' Digite quantos quilos deseja: '))
-        return peso = mc
-
-
-def frutas_ps_pc (peso):
-
-    if peso <= 5:
-
+def frutas_ps_pc (preco):    
+    preco = (mrp * mr) + ( mcp * mc)
+    
+    if peso <= 5:   
         mrp = 2.5
-        mcp = 1.8
-
-        preco = (mrp * mr) + ( mcp * mc)
-        print (preco)
-
-    elif 5 < peso <= 8:
-
+        mcp = 1.8   
+        return preco    
+    elif 5 < peso <= 8: 
         mrp = 2.2
-        mcp = 1.5
-
-        preco = (mrp * mr) + ( mcp * mc)
-        print (preco)
-
-    elif peso  > 8 or preco > 25:
-
+        mcp = 1.5   
+        return preco    
+    elif peso  > 15 or preco > 25:   
         mrp = 2.2
-        mcp = 1.5
-
+        mcp = 1.5   
         preco = ((mrp * mr) + ( mcp * mc)) * 0.9
-        print (preco)
-    
+        return preco   
+print (f'PREÇO: {frutas_ps_pc(preco)}')
 
-print(frutas(qual_fruta))
+#print(f'PESO {frutas(qual_fruta)}')
 
-print (frutas_ps_pc(peso))
