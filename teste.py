@@ -1474,7 +1474,7 @@ def frutas_peso (peso, mc , mr):
         return peso
 
 def frutas_preco (preco):
-    mr = 2
+    
     #mc = 
     #if peso <= 5:   
     #    mrp = 2.5
