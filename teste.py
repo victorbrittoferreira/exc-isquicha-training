@@ -1431,92 +1431,64 @@
 
 #import pdb; pdb.set_trace()
 
-#qual_fruta = input ('Se apenas morangos, digite mr, se apenas maças, digte mc, se ambos digite mm: ')
-qual_fruta = 'mr'
+qual_fruta = input ('Se apenas morangos, digite mr, se apenas maças, digte mc, se ambos digite mm: ')
 
-#def valor_frutas (*peso , frutas):
+def frutas_peso ():        
+    if qual_fruta == 'mr':
+        peso = float ( input (f' Digite quantos quilos de morango: '))
+        if peso <= 5:   
+            mrp = 2.5
+            preco = peso * mrp
+            return preco
+        
+        elif 5 < peso <= 8: 
+            mrp = 2.2
+            preco = peso * mrp
+            return preco
 
-#   if peso <= 5:
-#       morango = 2.5
-#       maca = 1.8
-#   elif frutas > 5:
-#       morango = 2.2
-#       maca = 1.5
-#   elif frutas > 8 or preço > 25: 
-  
-peso = 0
-preco = 0
+        elif peso > 8 or preco > 25:   
+            mrp = 2.2
+            preco =( peso * mrp)* 0.9 
+            return preco
     
-mr = 0
-mc = 0
     
-#def frutas_ps_pc (preco):    
-mrp = 0
-mcp = 0
+    elif qual_fruta == 'mc':
+        peso = float ( input (f' Digite quantos quilos de maca : '))
+        if peso <= 5:   
+            mcp = 2.5
+            preco = peso * mcp
+            return preco
+        
+        elif 5 < peso <= 8: 
+            mcp = 2.2
+            preco = peso * mcp
+            return preco
 
-def frutas_peso (peso, mc , mr):        
-
-    if qual_fruta == 'mm':
+        elif peso > 8 or preco > 25:   
+            mcp = 2.2
+            preco =( peso * mcp)* 0.9 
+            return preco
+                
+    
+    elif qual_fruta == 'mm':
         mr = float ( input (f' Digite quantos quilos de morango : '))
         mc = float ( input (f' Digite quantos quilos de maca : '))
         peso = mc + mr
-        return peso
-    
-    elif qual_fruta == 'mr':
-        mr = float ( input (f' Digite quantos quilos de morango: '))
-        peso = mr
-        return peso
-        #print (peso)
+        if peso <= 5:   
+            mrp = 2.5
+            mcp = 1.8   
+            preco = (mrp * mr) + ( mcp * mc)
+            return preco
+        elif 5 < peso <= 8: 
+            mrp = 2.2
+            mcp = 1.5   
+            preco = (mrp * mr) + ( mcp * mc)
+            return preco
+        elif peso > 8 or preco > 25:   
+            mrp = 2.2
+            mcp = 1.5   
+            preco = ((mrp * mr) + ( mcp * mc)) *0.9#return peso
+            return preco        
         
-    elif qual_fruta == 'mc':
-        mc = float ( input (f' Digite quantos quilos de maca : '))
-        peso = mc
-        return peso
-
-def frutas_preco (preco):
     
-    #mc = 
-    #if peso <= 5:   
-    #    mrp = 2.5
-    #    mcp = 1.8   
-    #    preco = (mrp * mr) + ( mcp * mc)
-    #    return preco    
-#
-    #elif 5 < peso <= 8: 
-    #    mrp = 2.2
-    #    mcp = 1.5   
-    #    preco = (mrp * mr) + ( mcp * mc)
-    #    #print(preco)
-    #    return preco    
-#
-    #elif peso > 8 or preco > 25:   
-    #    mrp = 2.2
-    #    mcp = 1.5   
-    #    preco = (mrp * mr) + ( mcp * mc)
-    #    #print(preco)
-    #    return preco * 0.9
-    
-    if peso <= 5:   
-        mrp = 2.5
-        mcp = 1.8   
-        preco = (mrp * mr) + ( mcp * mc)
-        return preco
-        #print(f'até 5 kg {preco}')    
-
-    elif 5 < peso <= 8: 
-        mrp = 2.2
-        mcp = 1.5   
-        preco = (mrp * mr) + ( mcp * mc)
-        return preco
-        #print(f'acima de 5 kg e até 8 kg {preco}')    
-
-    elif  peso > 8 or preco > 25:   
-        mrp = 2.2
-        mcp = 1.5   
-        preco = ((mrp * mr) + ( mcp * mc)) *0.9
-        return preco
-        #print(f'acima de 8 kg ou acima de 25 r$ {preco}')  
-
-
-print(frutas_peso(peso, mc, mr))
-print(frutas_preco(preco))
+print(f'Preço {frutas_peso()}')
