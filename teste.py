@@ -1431,64 +1431,129 @@
 
 #import pdb; pdb.set_trace()
 
-qual_fruta = input ('Se apenas morangos, digite mr, se apenas maças, digte mc, se ambos digite mm: ')
+#qual_fruta = input ('Se apenas morangos, digite mr, se apenas maças, digte mc, se ambos digite mm: ')
+#
+#def frutas_peso ():        
+#    if qual_fruta == 'mr':
+#        peso = float ( input (f' Digite quantos quilos de morango: '))
+#        if peso <= 5:   
+#            mrp = 2.5
+#            preco = peso * mrp
+#            return preco
+#        
+#        elif 5 < peso <= 8: 
+#            mrp = 2.2
+#            preco = peso * mrp
+#            return preco
+#
+#        elif peso > 8 or preco > 25:   
+#            mrp = 2.2
+#            preco =( peso * mrp)* 0.9 
+#            return preco
+#    
+#    
+#    elif qual_fruta == 'mc':
+#        peso = float ( input (f' Digite quantos quilos de maca : '))
+#        if peso <= 5:   
+#            mcp = 2.5
+#            preco = peso * mcp
+#            return preco
+#        
+#        elif 5 < peso <= 8: 
+#            mcp = 2.2
+#            preco = peso * mcp
+#            return preco
+#
+#        elif peso > 8 or preco > 25:   
+#            mcp = 2.2
+#            preco =( peso * mcp)* 0.9 
+#            return preco
+#                
+#    
+#    elif qual_fruta == 'mm':
+#        mr = float ( input (f' Digite quantos quilos de morango : '))
+#        mc = float ( input (f' Digite quantos quilos de maca : '))
+#        peso = mc + mr
+#        if peso <= 5:   
+#            mrp = 2.5
+#            mcp = 1.8   
+#            preco = (mrp * mr) + ( mcp * mc)
+#            return preco
+#        elif 5 < peso <= 8: 
+#            mrp = 2.2
+#            mcp = 1.5   
+#            preco = (mrp * mr) + ( mcp * mc)
+#            return preco
+#        elif peso > 8 or preco > 25:   
+#            mrp = 2.2
+#            mcp = 1.5   
+#            preco = ((mrp * mr) + ( mcp * mc)) *0.9#return peso
+#            return preco        
+#        
+#    
+#print(f'Preço {frutas_peso()}')
 
-def frutas_peso ():        
-    if qual_fruta == 'mr':
-        peso = float ( input (f' Digite quantos quilos de morango: '))
+
+## 45 O Hipermercado Tabajara está com uma promoção de carnes que é imperdível. Confira:
+
+#                  Até 5 Kg           Acima de 5 Kg
+
+#File Duplo R$ 4,90 por Kg R$ 5,80 por Kg 
+# Alcatra R$ 5,90 por Kg R$ 6,80 por Kg 
+# Picanha R$ 6,90 por Kg R$ 7,80 por Kg
+
+#Para atender a todos os clientes, cada cliente poderá levar apenas um dos tipos de carne da promoção,
+#porém não há limites para a quantidade de carne por cliente.
+#Se compra for feita no cartão Tabajara o cliente receberá ainda um desconto de 5% sobre o total da compra.
+#Escreva um programa que peça o tipo e a quantidade de carne comprada pelo usuário e gere um cupom fiscal, 
+#contendo as informações da compra: tipo de carne quantidade de carne preço total tipo de pagamento valor do desconto valor a pagar.
+
+qual_carne = input ('Se file duplo, digite fd, se alcatra, digte al, se picanha, pi: ')
+
+
+def carne_valor ():        
+    if qual_carne == 'fd':
+        peso = float ( input (f' Digite quantos quilos de file duplo kg: '))
         if peso <= 5:   
-            mrp = 2.5
-            preco = peso * mrp
+            pfd = 4.9 
+            preco = peso * pfd
             return preco
-        
-        elif 5 < peso <= 8: 
-            mrp = 2.2
-            preco = peso * mrp
+        else: 
+            pfd = 5.8
+            preco = peso * pfd
             return preco
 
-        elif peso > 8 or preco > 25:   
-            mrp = 2.2
-            preco =( peso * mrp)* 0.9 
-            return preco
-    
-    
-    elif qual_fruta == 'mc':
-        peso = float ( input (f' Digite quantos quilos de maca : '))
-        if peso <= 5:   
-            mcp = 2.5
-            preco = peso * mcp
-            return preco
         
-        elif 5 < peso <= 8: 
-            mcp = 2.2
-            preco = peso * mcp
+    elif qual_carne == 'al':
+        peso = float ( input (f' Digite quantos quilos de alcatra kg: '))
+        if peso <= 5:   
+            pal = 5.9 
+            preco = peso * pal
             return preco
+        else: 
+            pal = 6.8
+            preco = peso * pal
+            return preco
+            
+    elif qual_carne == 'pi':
+        peso = float ( input (f' Digite quantos quilos de picanha kg: '))           
+        if peso <= 5:   
+            ppi = 6.9
+            preco = peso * ppi
+            return preco
+        else: 
+            ppi = 7.8
+            preco = peso * ppi
+            return preco
+    
+    forma_pgmt = input (
+    
+    'A forma de pagamento no TBJ CARD ?Se for, haverá 5% de desconto. Digite S/N: ')
 
-        elif peso > 8 or preco > 25:   
-            mcp = 2.2
-            preco =( peso * mcp)* 0.9 
-            return preco
-                
-    
-    elif qual_fruta == 'mm':
-        mr = float ( input (f' Digite quantos quilos de morango : '))
-        mc = float ( input (f' Digite quantos quilos de maca : '))
-        peso = mc + mr
-        if peso <= 5:   
-            mrp = 2.5
-            mcp = 1.8   
-            preco = (mrp * mr) + ( mcp * mc)
-            return preco
-        elif 5 < peso <= 8: 
-            mrp = 2.2
-            mcp = 1.5   
-            preco = (mrp * mr) + ( mcp * mc)
-            return preco
-        elif peso > 8 or preco > 25:   
-            mrp = 2.2
-            mcp = 1.5   
-            preco = ((mrp * mr) + ( mcp * mc)) *0.9#return peso
-            return preco        
-        
-    
-print(f'Preço {frutas_peso()}')
+    if forma_pgmt == 'S':
+        #preco = carne_valor (preco) * 0.05
+        print(f'Preço R$ {carne_valor():.2f}')
+    else:
+        print(f'Preço R$ {carne_valor():.2f}')
+
+print({carne_valor ()})
