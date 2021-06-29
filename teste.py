@@ -1510,6 +1510,7 @@
 
 qual_carne = input ('Se file duplo, digite fd, se alcatra, digte al, se picanha, pi: ')
 
+preco = 0
 
 def carne_valor ():        
     if qual_carne == 'fd':
@@ -1546,14 +1547,16 @@ def carne_valor ():
             preco = peso * ppi
             return preco
     
-    forma_pgmt = input (
-    
+def forma_pgmt():
+    forma_pgmt = input (    
     'A forma de pagamento no TBJ CARD ?Se for, haverá 5% de desconto. Digite S/N: ')
+    desc = 95/100
 
     if forma_pgmt == 'S':
-        #preco = carne_valor (preco) * 0.05
-        print(f'Preço R$ {carne_valor():.2f}')
+        #preco *= 0.05
+        return f'Preço R$ {(carne_valor ()* desc ):.2f}'
     else:
-        print(f'Preço R$ {carne_valor():.2f}')
+        return f'Preço R$ {carne_valor ():.2f}'
 
-print({carne_valor ()})
+print(forma_pgmt())
+    
