@@ -45,4 +45,5 @@
 #a , b = 'A' , 'B'
 #print("Resultado  %s e %s" %( b, a ))
 
-#
+print("Resultado  %s e %s" %( b, a ))
+print("Resultado  %s e %s" %( b, a ))
