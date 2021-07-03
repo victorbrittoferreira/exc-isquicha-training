@@ -41,5 +41,8 @@
 #multiple itens
 #print("Resultado  %s e %s" %('A', 'B'))
  
-print("Resultado  %s e %s" %('A', 'B'))
- 
+# like math = theres a equality parallel = signal
+#a , b = 'A' , 'B'
+#print("Resultado  %s e %s" %( b, a ))
+
+#
