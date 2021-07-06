@@ -47,5 +47,6 @@
 
 print("Resultado  %s e %s" %( b, a ))
 
-print("Resultado  %s e %s" %( b, a ))
-print("Resultado  %s e %s" %( b, a ))
+my_list = ['A string',23,100.232,'o']
+
+
