@@ -45,9 +45,6 @@
 #a , b = 'A' , 'B'
 #print("Resultado  %s e %s" %( b, a ))
 
-print("Resultado  %s e %s" %( b, a ))
+a = 1.2
 
-my_list1 = ['A string',23,100.232,'o']
-
-my_list2 = ['A string',23,100.232,'o']
-
+ 
