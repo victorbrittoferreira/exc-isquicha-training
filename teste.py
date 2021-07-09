@@ -1210,12 +1210,16 @@
 #
 #        cem = saque // 100
 #        cem_resto = saque % 100
+#        
 #        cinquenta =  cem_resto // 50
 #        cinquenta_resto = cem_resto % 50
+#        
 #        dez = cinquenta_resto // 10
 #        dez_resto = cinquenta_resto % 10
+#        
 #        cinco = dez_resto // 5
-#        cinco_resto = dez_resto % 5   
+#        cinco_resto = dez_resto % 5
+#           
 #        um = cinco_resto // 1
 #
 #        decomp_saque = (len(str(saque)))
@@ -1508,55 +1512,60 @@
 #Escreva um programa que peça o tipo e a quantidade de carne comprada pelo usuário e gere um cupom fiscal, 
 #contendo as informações da compra: tipo de carne quantidade de carne preço total tipo de pagamento valor do desconto valor a pagar.
 
-qual_carne = input ('Se file duplo, digite fd, se alcatra, digte al, se picanha, pi: ')
+#qual_carne = input ('Se file duplo, digite fd, se alcatra, digte al, se picanha, pi: ')
+#
+#preco = 0
+#
+#def carne_valor ():        
+#    if qual_carne == 'fd':
+#        peso = float ( input (f' Digite quantos quilos de file duplo kg: '))
+#        if peso <= 5:   
+#            pfd = 4.9 
+#            preco = peso * pfd
+#            return preco
+#        else: 
+#            pfd = 5.8
+#            preco = peso * pfd
+#            return preco
+#
+#        
+#    elif qual_carne == 'al':
+#        peso = float ( input (f' Digite quantos quilos de alcatra kg: '))
+#        if peso <= 5:   
+#            pal = 5.9 
+#            preco = peso * pal
+#            return preco
+#        else: 
+#            pal = 6.8
+#            preco = peso * pal
+#            return preco
+#            
+#    elif qual_carne == 'pi':
+#        peso = float ( input (f' Digite quantos quilos de picanha kg: '))           
+#        if peso <= 5:   
+#            ppi = 6.9
+#            preco = peso * ppi
+#            return preco
+#        else: 
+#            ppi = 7.8
+#            preco = peso * ppi
+#            return preco
+#     
+#    
+#def forma_pgmt():
+#    forma_pgmt = input (    
+#    'A forma de pagamento no TBJ CARD ?Se for, haverá 5% de desconto. Digite S/N: ')
+#    desc = 95/100
+#
+#    if forma_pgmt == 'S':
+#        #preco *= 0.05
+#        return f'Preço R$ {(carne_valor ()* desc ):.2f}'
+#    else:
+#        return f'Preço R$ {carne_valor ():.2f}'
+#
+#print(forma_pgmt())
 
-preco = 0
 
-def carne_valor ():        
-    if qual_carne == 'fd':
-        peso = float ( input (f' Digite quantos quilos de file duplo kg: '))
-        if peso <= 5:   
-            pfd = 4.9 
-            preco = peso * pfd
-            return preco
-        else: 
-            pfd = 5.8
-            preco = peso * pfd
-            return preco
-
-        
-    elif qual_carne == 'al':
-        peso = float ( input (f' Digite quantos quilos de alcatra kg: '))
-        if peso <= 5:   
-            pal = 5.9 
-            preco = peso * pal
-            return preco
-        else: 
-            pal = 6.8
-            preco = peso * pal
-            return preco
-            
-    elif qual_carne == 'pi':
-        peso = float ( input (f' Digite quantos quilos de picanha kg: '))           
-        if peso <= 5:   
-            ppi = 6.9
-            preco = peso * ppi
-            return preco
-        else: 
-            ppi = 7.8
-            preco = peso * ppi
-            return preco
-    
-def forma_pgmt():
-    forma_pgmt = input (    
-    'A forma de pagamento no TBJ CARD ?Se for, haverá 5% de desconto. Digite S/N: ')
-    desc = 95/100
-
-    if forma_pgmt == 'S':
-        #preco *= 0.05
-        return f'Preço R$ {(carne_valor ()* desc ):.2f}'
-    else:
-        return f'Preço R$ {carne_valor ():.2f}'
-
-print(forma_pgmt())
-    
+filetest = open ('text.txt', 'r')
+#filetest.write ('atecubanos',)
+print(filetest.read())
