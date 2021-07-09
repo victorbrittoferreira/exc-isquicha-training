@@ -100,7 +100,7 @@
 #list4.sort()
 #print(list4)
 
-#Dictionaries
+#DICTIONARIES
 #
 #Using keys and indexing, grab the 'hello' from the following dictionaries:
 #In [ ]:
@@ -114,27 +114,31 @@
 #print(d['k1']['k2'])
 
 ## Getting a little tricker
-d = {'k1':[{'nest_key':['this is deep',['hello']]}]}
+#d = {'k1':[{'nest_key':['this is deep',['hello']]}]}
 ##Grab hello
 #print(d['k1'][0]['nest_key'][1][0])
 
 ## This will be hard and annoying!
 #d = {'k1':[1,2,{'k2':['this is tricky',{'tough':[1,2,['hello']]}]}]}
-#
+#print(d['k1'][2]['k2'][1]['tough'][2][0])
+
+
 #Can you sort a dictionary? Why or why not?
-#
-#Tuples
+#Nope, coz its unsortable
+
+#TUPLES
 #
 #What is the major difference between tuples and lists?
-#
+#Tuple are immutable
+
 #How do you create a tuple?
-#
-#Sets
+# setting it between ()
+
+#SETS
 #
 #What is unique about a set?
-#
-#Use a set to find the unique values of the list below:
-#In [ ]:
-#
-#list5 = [1,2,2,33,4,4,11,22,3,3,2]
+#This shit dont repeat the same fucking values
 
+#Use a set to find the unique values of the list below:
+#list5 = [1,2,2,33,4,4,11,22,3,3,2]
+#print(set(list5)) 
