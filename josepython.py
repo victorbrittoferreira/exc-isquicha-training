@@ -48,27 +48,8 @@
 
 ### FIRST ASSESTMENT
 
-#Answer the following questions
-#
-#Write (or just say out loud to yourself) a brief description of all the following Object Types and Data Structures we've learned about.
-# Really this is just to test if you know the difference between these, so feel free to just think about it, since your answers are self-graded.
-#
-#Numbers:
-#
-#Strings:
-#
-#Lists:
-#
-#Tuples:
-#
-#Dictionaries:
-#Numbers
-#
-#Strings
 #
 #Given the string 'hello' give an index command that returns 'e'. Enter your code in the cell below:
-#In [ ]:
-#
 ## Print out 'e' using indexing
 #s = 'hello'
 #print(s[1])
@@ -77,17 +58,6 @@
 #Reverse the string 'hello' using slicing:
 #print(s[::-1])
 
-#Lists
-#
-#Build this list [0,0,0] two separate ways.
-#x = [0,0,0]
-
-## Method 1:
-#
-#print(x.list()) 
-#
-## Method 2:
-#
 #Reassign 'hello' in this nested list to say 'goodbye' instead:
 #x[2] = 'hello'
 #
@@ -97,14 +67,12 @@
 
 #Sort the list below:
 #list4 = [5,3,4,6,1]
-#list4.sort()
+#print(sorted(list4)) # sorted não modifica a lista, mas só para o uso
 #print(list4)
 
 #DICTIONARIES
 #
 #Using keys and indexing, grab the 'hello' from the following dictionaries:
-#In [ ]:
-#
 #d = {'simple_key':'hello'}
 #Grab 'hello'
 #print(d['simple_key'])
@@ -118,16 +86,16 @@
 ##Grab hello
 #print(d['k1'][0]['nest_key'][1][0])
 
-## This will be hard and annoying!
+## This will be hard and annoying! 
 #d = {'k1':[1,2,{'k2':['this is tricky',{'tough':[1,2,['hello']]}]}]}
 #print(d['k1'][2]['k2'][1]['tough'][2][0])
 
 
 #Can you sort a dictionary? Why or why not?
-#Nope, coz its unsortable
+#Nope, coz its mappings not a sequence
 
 #TUPLES
-#
+# 
 #What is the major difference between tuples and lists?
 #Tuple are immutable
 
@@ -142,3 +110,27 @@
 #Use a set to find the unique values of the list below:
 #list5 = [1,2,2,33,4,4,11,22,3,3,2]
 #print(set(list5)) 
+
+
+## For loops
+
+my_list = [1,2,3,4,5,6]
+
+#for num in my_list:
+#    #print(num, 'hello')
+#    if num % 2 == 0:
+#        print( num ,"even")
+#    else:
+#        print( num ,"odd")
+
+list_sum = 0
+
+for num in my_list:
+    list_sum = list_sum + num
+    
+## difference between print in or out of loop is:
+    ## print each sum into the end    
+    print(list_sum)
+
+# print in the end
+print(list_sum)
