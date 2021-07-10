@@ -114,23 +114,96 @@
 
 ## For loops
 
-my_list = [1,2,3,4,5,6]
+#my_list = [1,2,3,4,5,6]
+#white space is a placeholder
+#for _ in my_list:
+#    print(_)
 
+##for num in my_list:
+##    #print(num, 'hello')
+##    if num % 2 == 0:
+##        print( num ,"even")
+##    else:
+##        print( num ,"odd")
+#
+#list_sum = 0
+#
 #for num in my_list:
-#    #print(num, 'hello')
-#    if num % 2 == 0:
-#        print( num ,"even")
-#    else:
-#        print( num ,"odd")
+#    list_sum = list_sum + num
+#    
+### difference between print in or out of loop is:
+#    ## print each sum into the end    
+#    print(f'Elm {num} - Result {list_sum}')
+#
+## print in the end
+#print(list_sum)
 
-list_sum = 0
+#string = 'Koe Kumpadi'
+#
+#for letter in string:
+#    print(letter)
 
-for num in my_list:
-    list_sum = list_sum + num
+# tuple inside a list 
+#my_list = [(1,2), (3,4)]
+#
+## each element inside a tuple must be declared, to be unpacked
+#    print(a)
+#    print(b)
+
+# aplying a even filtering
+#my_list = [(1,2,3), (4,5,6)]
+#for a,b,c in my_list:
+#    if a % 2 == 0:
+#        print(a)
+#    if b % 2 == 0:
+#        print(b)
+#    if c % 2 == 0:
+#        print(c)
+
+  
+
+#d = {'k1':2,'k2':3,'k3':4}
+# only unpack the key
+#for item in d:
+#    print(item)
+
+#complete unpacking
+#for k, v in d.items():
+#    print(v, k) 
+
+# only the value    
+#for value in d.values():
+#    print(value) 
+
+#36. While Loops in Python
+
+#x = 0
+#
+#while x < 5: 
+#    print (f'Print {x}')
+#    
+#    x += 1
+#else:
+#    print('Acabou')
     
-## difference between print in or out of loop is:
-    ## print each sum into the end    
-    print(list_sum)
+#break: Breaks out of the current closest enclosing loop.
+#continue: Goes to the top of the closest enclosing loop.
+#pass: Does nothing at all.
 
-# print in the end
-print(list_sum)
+#x = [1,2,3]
+#
+#for item in x:
+    
+    #keep as a placeholder to avoid eof error
+    #pass
+    
+    #if item % 2 == 0:
+    ## go back to the loop
+    #    continue
+    #print(item)
+    
+    
+    #if item % 2 == 0:
+    #    break
+    ## stop to the loop
+    #print(item)
