@@ -206,4 +206,49 @@
     #if item % 2 == 0:
     #    break
     ## stop to the loop
-    #print(item)
+    #print(item) 
+    
+# 37 Useful tools
+
+my_list = [1,2,3]
+
+# use to iterate objects, but its only an information generator 
+#for num in range(10):
+#    print(num)
+
+#index_count = 1
+#
+#for letter in 'abcde':
+#    print(f'Index {index_count} of the letter {letter}')
+#    index_count += 1
+
+## a smart way is use enumerate function to replacte it
+
+#word = 'abcde'
+#
+#for index, letter in enumerate (word):
+#    print(letter)
+
+## ZIP FUNCTION
+
+#my_list1 = [1,2,3]
+#my_list2 = ['a','b','c']
+#my_list3 = ['@','!','$','%']
+
+# it cast each bit together, but don't show error if there's much more bits than zipeable
+#for item in zip (my_list1, my_list2 , my_list3):
+#    print(item)
+
+#for a,b,c in zip (my_list1, my_list2 , my_list3):
+#    print(a)
+    
+# to cleat a list of zipped items 
+
+#print ( list ( zip (my_list1, my_list2)))
+
+# to check if exist and x in a set
+
+#z = {'mykey':123}
+#
+#print( 123 in z.values())
+#print( 'mykey' in z.keys())
